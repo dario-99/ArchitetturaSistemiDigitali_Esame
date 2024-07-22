@@ -1,0 +1,241 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Wed Jul  3 17:23:26 2024
+# Process ID: 19332
+# Current directory: D:/Desktop/magistrale/1_anno/1 SEMESTRE/architettura/esercizi/ESERCIZI TESINA/RiconoscitoreSequenze/RiconoscitoreSequenze.runs/synth_1
+# Command line: vivado.exe -log RiconoscitoreOnBoard.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source RiconoscitoreOnBoard.tcl
+# Log file: D:/Desktop/magistrale/1_anno/1 SEMESTRE/architettura/esercizi/ESERCIZI TESINA/RiconoscitoreSequenze/RiconoscitoreSequenze.runs/synth_1/RiconoscitoreOnBoard.vds
+# Journal file: D:/Desktop/magistrale/1_anno/1 SEMESTRE/architettura/esercizi/ESERCIZI TESINA/RiconoscitoreSequenze/RiconoscitoreSequenze.runs/synth_1\vivado.jou
+# Running On: dario-pc, OS: Windows, CPU Frequency: 3893 MHz, CPU Physical cores: 12, Host memory: 16424 MB
+#-----------------------------------------------------------
+source RiconoscitoreOnBoard.tcl -notrace
+Command: read_checkpoint -auto_incremental -incremental {D:/Desktop/magistrale/1_anno/1 SEMESTRE/architettura/esercizi/ESERCIZI TESINA/RiconoscitoreSequenze/RiconoscitoreSequenze.srcs/utils_1/imports/synth_1/RiconoscitoreOnBoard.dcp}
+INFO: [Vivado 12-5825] Read reference checkpoint from D:/Desktop/magistrale/1_anno/1 SEMESTRE/architettura/esercizi/ESERCIZI TESINA/RiconoscitoreSequenze/RiconoscitoreSequenze.srcs/utils_1/imports/synth_1/RiconoscitoreOnBoard.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top RiconoscitoreOnBoard -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 17692
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1329.957 ; gain = 440.402
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'RiconoscitoreOnBoard' [D:/Desktop/magistrale/1_anno/1 SEMESTRE/architettura/esercizi/ESERCIZI TESINA/RiconoscitoreSequenze/RiconoscitoreSequenze.srcs/sources_1/new/RiconoscitoreOnBoard.vhd:28]
+INFO: [Synth 8-638] synthesizing module 'ButtonDebouncer' [D:/Desktop/magistrale/1_anno/1 SEMESTRE/architettura/esercizi/cronometro/cronometro.srcs/sources_1/imports/new/ButtonDebouncer.vhd:45]
+	Parameter CLK_period bound to: 10 - type: integer 
+	Parameter btn_noise_time bound to: 6500000 - type: integer 
+INFO: [Synth 8-226] default block is never used [D:/Desktop/magistrale/1_anno/1 SEMESTRE/architettura/esercizi/cronometro/cronometro.srcs/sources_1/imports/new/ButtonDebouncer.vhd:60]
+INFO: [Synth 8-256] done synthesizing module 'ButtonDebouncer' (0#1) [D:/Desktop/magistrale/1_anno/1 SEMESTRE/architettura/esercizi/cronometro/cronometro.srcs/sources_1/imports/new/ButtonDebouncer.vhd:45]
+INFO: [Synth 8-638] synthesizing module 'Riconoscitore' [D:/Desktop/magistrale/1_anno/1 SEMESTRE/architettura/esercizi/ESERCIZI TESINA/RiconoscitoreSequenze/RiconoscitoreSequenze.srcs/sources_1/new/Riconoscitore.vhd:27]
+INFO: [Synth 8-256] done synthesizing module 'Riconoscitore' (0#1) [D:/Desktop/magistrale/1_anno/1 SEMESTRE/architettura/esercizi/ESERCIZI TESINA/RiconoscitoreSequenze/RiconoscitoreSequenze.srcs/sources_1/new/Riconoscitore.vhd:27]
+INFO: [Synth 8-256] done synthesizing module 'RiconoscitoreOnBoard' (0#1) [D:/Desktop/magistrale/1_anno/1 SEMESTRE/architettura/esercizi/ESERCIZI TESINA/RiconoscitoreSequenze/RiconoscitoreSequenze.srcs/sources_1/new/RiconoscitoreOnBoard.vhd:28]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1437.773 ; gain = 548.219
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1437.773 ; gain = 548.219
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1437.773 ; gain = 548.219
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1437.773 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/Desktop/magistrale/1_anno/1 SEMESTRE/architettura/esercizi/ESERCIZI TESINA/RiconoscitoreSequenze/RiconoscitoreSequenze.srcs/constrs_1/new/constraint.xdc]
+Finished Parsing XDC File [D:/Desktop/magistrale/1_anno/1 SEMESTRE/architettura/esercizi/ESERCIZI TESINA/RiconoscitoreSequenze/RiconoscitoreSequenze.srcs/constrs_1/new/constraint.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/Desktop/magistrale/1_anno/1 SEMESTRE/architettura/esercizi/ESERCIZI TESINA/RiconoscitoreSequenze/RiconoscitoreSequenze.srcs/constrs_1/new/constraint.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/RiconoscitoreOnBoard_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/RiconoscitoreOnBoard_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1529.492 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1529.492 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 1529.492 ; gain = 639.938
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 1529.492 ; gain = 639.938
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 1529.492 ; gain = 639.938
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1529.492 ; gain = 639.938
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 2     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 2     
+	   4 Input    4 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 3     
+	   2 Input    3 Bit        Muxes := 5     
+	   2 Input    1 Bit        Muxes := 3     
+	   3 Input    1 Bit        Muxes := 2     
+	  12 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 1529.492 ; gain = 639.938
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 1529.492 ; gain = 639.938
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 1529.492 ; gain = 639.938
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 1529.492 ; gain = 639.938
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 1529.492 ; gain = 639.938
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 1529.492 ; gain = 639.938
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 1529.492 ; gain = 639.938
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 1529.492 ; gain = 639.938
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 1529.492 ; gain = 639.938
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 1529.492 ; gain = 639.938
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |    16|
+|3     |LUT2   |     4|
+|4     |LUT3   |     2|
+|5     |LUT4   |     9|
+|6     |LUT5   |    14|
+|7     |LUT6   |    12|
+|8     |FDRE   |    73|
+|9     |IBUF   |     5|
+|10    |OBUF   |     5|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 1529.492 ; gain = 639.938
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:13 ; elapsed = 00:00:21 . Memory (MB): peak = 1529.492 ; gain = 548.219
+Synthesis Optimization Complete : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 1529.492 ; gain = 639.938
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1529.492 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 16 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1529.492 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: c6f9e698
+INFO: [Common 17-83] Releasing license: Synthesis
+28 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 1529.492 ; gain = 1047.523
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1529.492 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/Desktop/magistrale/1_anno/1 SEMESTRE/architettura/esercizi/ESERCIZI TESINA/RiconoscitoreSequenze/RiconoscitoreSequenze.runs/synth_1/RiconoscitoreOnBoard.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file RiconoscitoreOnBoard_utilization_synth.rpt -pb RiconoscitoreOnBoard_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Jul  3 17:24:00 2024...

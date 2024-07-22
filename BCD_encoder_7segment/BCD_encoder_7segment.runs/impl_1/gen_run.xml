@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1720002554">
+  <File Type="ROUTE-PWR" Name="PriorityEncoderOnDisplay_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="PriorityEncoderOnDisplay.tcl"/>
+  <File Type="ROUTE-PWR-SUM" Name="PriorityEncoderOnDisplay_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="PriorityEncoderOnDisplay_reports.tcl"/>
+  <File Type="OPT-RQA-PB" Name="PriorityEncoderOnDisplay_rqa_opted.pb"/>
+  <File Type="BITSTR-MMI" Name="PriorityEncoderOnDisplay.mmi"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="PriorityEncoderOnDisplay_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="PriorityEncoderOnDisplay_timing_summary_init.rpt"/>
+  <File Type="OPT-TIMING" Name="PriorityEncoderOnDisplay_timing_summary_opted.rpt"/>
+  <File Type="OPT-DCP" Name="PriorityEncoderOnDisplay_opt.dcp"/>
+  <File Type="OPT-DRC" Name="PriorityEncoderOnDisplay_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="PriorityEncoderOnDisplay.hwdef"/>
+  <File Type="PWROPT-DCP" Name="PriorityEncoderOnDisplay_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="PriorityEncoderOnDisplay_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="PriorityEncoderOnDisplay_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="PriorityEncoderOnDisplay_placed.dcp"/>
+  <File Type="PLACE-IO" Name="PriorityEncoderOnDisplay_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="PriorityEncoderOnDisplay_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="PriorityEncoderOnDisplay_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="PriorityEncoderOnDisplay_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="PriorityEncoderOnDisplay_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="PriorityEncoderOnDisplay_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="PriorityEncoderOnDisplay_incremental_reuse_pre_placed.rpt"/>
+  <File Type="BG-BIN" Name="PriorityEncoderOnDisplay.bin"/>
+  <File Type="PLACE-TIMING" Name="PriorityEncoderOnDisplay_timing_summary_placed.rpt"/>
+  <File Type="ROUTE-PWR-RPX" Name="PriorityEncoderOnDisplay_power_routed.rpx"/>
+  <File Type="PLACE-RQA-PB" Name="PriorityEncoderOnDisplay_rqa_placed.pb"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="PriorityEncoderOnDisplay_postplace_pwropt.dcp"/>
+  <File Type="BITSTR-MSK" Name="PriorityEncoderOnDisplay.msk"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="PriorityEncoderOnDisplay_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="PriorityEncoderOnDisplay_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="PriorityEncoderOnDisplay_drc_physopted.rpt"/>
+  <File Type="BITSTR-RBT" Name="PriorityEncoderOnDisplay.rbt"/>
+  <File Type="PHYSOPT-TIMING" Name="PriorityEncoderOnDisplay_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="PriorityEncoderOnDisplay_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="PriorityEncoderOnDisplay_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="PriorityEncoderOnDisplay_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="PriorityEncoderOnDisplay_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="PriorityEncoderOnDisplay_drc_routed.pb"/>
+  <File Type="ROUTE-DRC-RPX" Name="PriorityEncoderOnDisplay_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="PriorityEncoderOnDisplay_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="PriorityEncoderOnDisplay_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="PriorityEncoderOnDisplay_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-RQS-PB" Name="PriorityEncoderOnDisplay_rqs_routed.pb"/>
+  <File Type="ROUTE-STATUS" Name="PriorityEncoderOnDisplay_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="PriorityEncoderOnDisplay_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="PriorityEncoderOnDisplay_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="PriorityEncoderOnDisplay_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="PriorityEncoderOnDisplay_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="PriorityEncoderOnDisplay_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="PriorityEncoderOnDisplay_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="PriorityEncoderOnDisplay_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="PriorityEncoderOnDisplay_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="PriorityEncoderOnDisplay_bus_skew_routed.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="PriorityEncoderOnDisplay_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="PriorityEncoderOnDisplay_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="PriorityEncoderOnDisplay_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="PriorityEncoderOnDisplay_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="PriorityEncoderOnDisplay_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="PriorityEncoderOnDisplay_bus_skew_postroute_physopted.rpt"/>
+  <File Type="BG-BIT" Name="PriorityEncoderOnDisplay.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="PriorityEncoderOnDisplay_bus_skew_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="PriorityEncoderOnDisplay_bus_skew_postroute_physopted.rpx"/>
+  <File Type="BITSTR-NKY" Name="PriorityEncoderOnDisplay.nky"/>
+  <File Type="BITSTR-BMM" Name="PriorityEncoderOnDisplay_bd.bmm"/>
+  <File Type="PDI-FILE" Name="PriorityEncoderOnDisplay.pdi"/>
+  <File Type="BOOT-PDI-FILE" Name="PriorityEncoderOnDisplay_boot.pdi"/>
+  <File Type="PL-PDI-FILE" Name="PriorityEncoderOnDisplay_pld.pdi"/>
+  <File Type="RCFI_FILE" Name="PriorityEncoderOnDisplay.rcfi"/>
+  <File Type="CFI_FILE" Name="PriorityEncoderOnDisplay.cfi"/>
+  <File Type="RNPI_FILE" Name="PriorityEncoderOnDisplay.rnpi"/>
+  <File Type="NPI_FILE" Name="PriorityEncoderOnDisplay.npi"/>
+  <File Type="RBD_FILE" Name="PriorityEncoderOnDisplay.rbd"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="PriorityEncoderOnDisplay.ltx"/>
+  <File Type="BITSTR-SYSDEF" Name="PriorityEncoderOnDisplay.sysdef"/>
+  <File Type="BG-BGN" Name="PriorityEncoderOnDisplay.bgn"/>
+  <File Type="BG-DRC" Name="PriorityEncoderOnDisplay.drc"/>
+  <File Type="RDI-RDI" Name="PriorityEncoderOnDisplay.vdi"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="ROUTE-RQS" Name="PriorityEncoderOnDisplay_routed.rqs"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS" Name="PriorityEncoderOnDisplay_postroute_physopted.rqs"/>
+  <File Type="ROUTE-RQS-RPT" Name="route_report_qor_suggestions_0.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS-RPT" Name="postroute_physopt_report_qor_suggestions_0.rpt"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/new/Arbiter.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../BCD_encoder/BCD_encoder.srcs/sources_1/new/Arbiter.vhd"/>
+        <Attr Name="ImportTime" Val="1719839037"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/Encoder.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../BCD_encoder/BCD_encoder.srcs/sources_1/new/Encoder.vhd"/>
+        <Attr Name="ImportTime" Val="1719838429"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/PriorityEncoder.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../BCD_encoder/BCD_encoder.srcs/sources_1/new/PriorityEncoder.vhd"/>
+        <Attr Name="ImportTime" Val="1719838998"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../cronometro/cronometro.srcs/sources_1/imports/new/clock_filter.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../cronometro/cronometro.srcs/sources_1/imports/new/counter_mod8.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../cronometro/cronometro.srcs/sources_1/imports/new/cathodes_manager.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../cronometro/cronometro.srcs/sources_1/imports/new/anodes_manager.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../cronometro/cronometro.srcs/sources_1/imports/new/seven_segment_array.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/PriorityEncoderOnDisplay.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="PriorityEncoderOnDisplay"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1" RelGenDir="$PGENDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/constraint.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1" RelGenDir="$PGENDIR/utils_1">
+    <Filter Type="Utils"/>
+    <File Path="$PSRCDIR/utils_1/imports/synth_1/PriorityEncoderOnDisplay.dcp">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedInSteps" Val="synth_1"/>
+        <Attr Name="AutoDcp" Val="1"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2023"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>

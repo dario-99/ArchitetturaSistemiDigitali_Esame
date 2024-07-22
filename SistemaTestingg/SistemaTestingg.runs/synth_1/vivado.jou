@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Wed Jul 10 17:50:40 2024
+# Process ID: 9600
+# Current directory: D:/Desktop/magistrale/1_anno/1 SEMESTRE/architettura/esercizi/ESERCIZI TESINA/SistemaTestingg/SistemaTestingg.runs/synth_1
+# Command line: vivado.exe -log TestMachineOnBoard.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source TestMachineOnBoard.tcl
+# Log file: D:/Desktop/magistrale/1_anno/1 SEMESTRE/architettura/esercizi/ESERCIZI TESINA/SistemaTestingg/SistemaTestingg.runs/synth_1/TestMachineOnBoard.vds
+# Journal file: D:/Desktop/magistrale/1_anno/1 SEMESTRE/architettura/esercizi/ESERCIZI TESINA/SistemaTestingg/SistemaTestingg.runs/synth_1\vivado.jou
+# Running On: dario-pc, OS: Windows, CPU Frequency: 3893 MHz, CPU Physical cores: 12, Host memory: 16424 MB
+#-----------------------------------------------------------
+source TestMachineOnBoard.tcl -notrace
