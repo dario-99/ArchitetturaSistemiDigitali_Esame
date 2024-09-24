@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<ProcessHandle Version="1" Minor="0">
+    <Process Command="vivado.bat" Owner="dario" Host="DARIO-PC" Pid="32836" HostCore="12" HostMemory="016961179648">
+    </Process>
+</ProcessHandle>
+<?xml version="1.0"?>
+<ProcessHandle Version="1" Minor="0">
+    <Process Command="vivado.bat" Owner="dario" Host="DARIO-PC" Pid="36368" HostCore="12" HostMemory="016961179648">
+    </Process>
+</ProcessHandle>
+<?xml version="1.0"?>
+<ProcessHandle Version="1" Minor="0">
+    <Process Command="vivado.bat" Owner="dario" Host="DARIO-PC" Pid="36788" HostCore="12" HostMemory="016961179648">
+    </Process>
+</ProcessHandle>
+<?xml version="1.0"?>
+<ProcessHandle Version="1" Minor="0">
+    <Process Command="vivado.bat" Owner="dario" Host="DARIO-PC" Pid="6456" HostCore="12" HostMemory="016961179648">
+    </Process>
+</ProcessHandle>
+<?xml version="1.0"?>
+<ProcessHandle Version="1" Minor="0">
+    <Process Command="vivado.bat" Owner="dario" Host="DARIO-PC" Pid="32256" HostCore="12" HostMemory="016961179648">
+    </Process>
+</ProcessHandle>
+<?xml version="1.0"?>
+<ProcessHandle Version="1" Minor="0">
+    <Process Command="vivado.bat" Owner="dario" Host="DARIO-PC" Pid="39160" HostCore="12" HostMemory="016961179648">
+    </Process>
+</ProcessHandle>
+<?xml version="1.0"?>
+<ProcessHandle Version="1" Minor="0">
+    <Process Command="vivado.bat" Owner="dario" Host="DARIO-PC" Pid="40716" HostCore="12" HostMemory="016961179648">
+    </Process>
+</ProcessHandle>
+<?xml version="1.0"?>
+<ProcessHandle Version="1" Minor="0">
+    <Process Command="vivado.bat" Owner="dario" Host="DARIO-PC" Pid="38584" HostCore="12" HostMemory="016961179648">
+    </Process>
+</ProcessHandle>

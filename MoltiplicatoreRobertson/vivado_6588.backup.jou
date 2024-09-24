@@ -1,0 +1,25 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Fri Aug  9 11:30:34 2024
+# Process ID: 6588
+# Current directory: D:/Desktop/magistrale/1_anno/1 SEMESTRE/architettura/esercizi/ESERCIZI TESINA/MoltiplicatoreRobertson
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9332 D:\Desktop\magistrale\1_anno\1 SEMESTRE\architettura\esercizi\ESERCIZI TESINA\MoltiplicatoreRobertson\MoltiplicatoreRobertson.xpr
+# Log file: D:/Desktop/magistrale/1_anno/1 SEMESTRE/architettura/esercizi/ESERCIZI TESINA/MoltiplicatoreRobertson/vivado.log
+# Journal file: D:/Desktop/magistrale/1_anno/1 SEMESTRE/architettura/esercizi/ESERCIZI TESINA/MoltiplicatoreRobertson\vivado.jou
+# Running On: dario-pc, OS: Windows, CPU Frequency: 3893 MHz, CPU Physical cores: 12, Host memory: 16961 MB
+#-----------------------------------------------------------
+start_gui
+open_project {D:/Desktop/magistrale/1_anno/1 SEMESTRE/architettura/esercizi/ESERCIZI TESINA/MoltiplicatoreRobertson/MoltiplicatoreRobertson.xpr}
+update_compile_order -fileset sources_1
+launch_simulation
+source Datapath_TB.tcl
+restart
+run 800 ns
+restart
+run 800 ns
+restart
+run 800 ns
+close_sim

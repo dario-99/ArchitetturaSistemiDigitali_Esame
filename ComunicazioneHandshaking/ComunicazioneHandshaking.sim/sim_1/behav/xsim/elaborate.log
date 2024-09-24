@@ -1,7 +1,7 @@
 Vivado Simulator v2023.2
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
-Running: D:/Programs/vivado/Vivado/2023.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot RippleCarryAdder_TB_behav xil_defaultlib.RippleCarryAdder_TB -log elaborate.log 
+Running: D:/Programs/vivado/Vivado/2023.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot SistemaComunicazione_TB_behav xil_defaultlib.SistemaComunicazione_TB -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
 Completed static elaboration
@@ -11,7 +11,22 @@ Time Resolution for simulation is 1ps
 Compiling package std.standard
 Compiling package std.textio
 Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.math_real
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture behavioral of entity xil_defaultlib.ROM [rom_default]
+Compiling architecture behavioral of entity xil_defaultlib.Contatore [\Contatore(n=8)\]
+Compiling architecture structural of entity xil_defaultlib.DataPathA [datapatha_default]
+Compiling architecture behavioral of entity xil_defaultlib.ControlUnitA [controlunita_default]
+Compiling architecture structural of entity xil_defaultlib.Transmitter [transmitter_default]
+Compiling architecture behavioral of entity xil_defaultlib.RX_Register [rx_register_default]
+Compiling architecture behavioral of entity xil_defaultlib.Memoria [\Memoria(n=9,m=8)\]
 Compiling architecture behavioral of entity xil_defaultlib.FA [fa_default]
 Compiling architecture behavioral of entity xil_defaultlib.RippleCarryAdder [ripplecarryadder_default]
-Compiling architecture behavioral of entity xil_defaultlib.ripplecarryadder_tb
-Built simulation snapshot RippleCarryAdder_TB_behav
+Compiling architecture structural of entity xil_defaultlib.DataPathB [datapathb_default]
+Compiling architecture behavioral of entity xil_defaultlib.ControlUnitB [controlunitb_default]
+Compiling architecture structural of entity xil_defaultlib.Receiver [receiver_default]
+Compiling architecture structural of entity xil_defaultlib.SistemaComunicazione [sistemacomunicazione_default]
+Compiling architecture behavioral of entity xil_defaultlib.sistemacomunicazione_tb
+Built simulation snapshot SistemaComunicazione_TB_behav

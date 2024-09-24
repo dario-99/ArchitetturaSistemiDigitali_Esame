@@ -70,8 +70,12 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
+set_param checkpoint.writeSynthRtdsInDcp 1
 set_param chipscope.maxJobs 3
+set_param xicom.use_bs_reader 1
 set_msg_config -id {Common 17-41} -limit 10000000
+set_msg_config -id {Synth 8-256} -limit 10000
+set_msg_config -id {Synth 8-638} -limit 10000
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7a100tcsg324-1
 
@@ -91,13 +95,17 @@ OPTRACE "Adding files" START { }
 read_vhdl -library xil_defaultlib {
   {D:/Desktop/magistrale/1_anno/1 SEMESTRE/architettura/esercizi/ESERCIZI TESINA/Cronometro/Cronometro.srcs/sources_1/imports/ESERCIZI TESINA/RiconoscitoreSequenze/RiconoscitoreSequenze.srcs/sources_1/imports/new/ButtonDebouncer.vhd}
   {D:/Desktop/magistrale/1_anno/1 SEMESTRE/architettura/esercizi/ESERCIZI TESINA/Cronometro/Cronometro.srcs/sources_1/new/Contatore.vhd}
-  {D:/Desktop/magistrale/1_anno/1 SEMESTRE/architettura/esercizi/ESERCIZI TESINA/Cronometro/Cronometro.srcs/sources_1/new/DecimalEncoder.vhd}
-  {D:/Desktop/magistrale/1_anno/1 SEMESTRE/architettura/esercizi/ESERCIZI TESINA/Cronometro/Cronometro.srcs/sources_1/new/Orologio.vhd}
-  {D:/Desktop/magistrale/1_anno/1 SEMESTRE/architettura/esercizi/ESERCIZI TESINA/Cronometro/Cronometro.srcs/sources_1/imports/new/clock_filter.vhd}
+  {D:/Desktop/magistrale/1_anno/1 SEMESTRE/architettura/esercizi/ESERCIZI TESINA/Cronometro/Cronometro.srcs/sources_1/new/ControlUnit.vhd}
   {D:/Desktop/magistrale/1_anno/1 SEMESTRE/architettura/esercizi/ESERCIZI TESINA/Cronometro/Cronometro.srcs/sources_1/imports/new/counter_mod8.vhd}
+  {D:/Desktop/magistrale/1_anno/1 SEMESTRE/architettura/esercizi/ESERCIZI TESINA/Cronometro/Cronometro.srcs/sources_1/new/Mux.vhd}
+  {D:/Desktop/magistrale/1_anno/1 SEMESTRE/architettura/esercizi/ESERCIZI TESINA/Cronometro/Cronometro.srcs/sources_1/new/Memoria.vhd}
+  {D:/Desktop/magistrale/1_anno/1 SEMESTRE/architettura/esercizi/ESERCIZI TESINA/Cronometro/Cronometro.srcs/sources_1/new/Orologio.vhd}
+  {D:/Desktop/magistrale/1_anno/1 SEMESTRE/architettura/esercizi/ESERCIZI TESINA/Cronometro/Cronometro.srcs/sources_1/new/DecimalEncoder.vhd}
+  {D:/Desktop/magistrale/1_anno/1 SEMESTRE/architettura/esercizi/ESERCIZI TESINA/Cronometro/Cronometro.srcs/sources_1/imports/new/clock_filter.vhd}
   {D:/Desktop/magistrale/1_anno/1 SEMESTRE/architettura/esercizi/ESERCIZI TESINA/Cronometro/Cronometro.srcs/sources_1/imports/new/cathodes_manager.vhd}
   {D:/Desktop/magistrale/1_anno/1 SEMESTRE/architettura/esercizi/ESERCIZI TESINA/Cronometro/Cronometro.srcs/sources_1/imports/new/anodes_manager.vhd}
   {D:/Desktop/magistrale/1_anno/1 SEMESTRE/architettura/esercizi/ESERCIZI TESINA/Cronometro/Cronometro.srcs/sources_1/imports/new/seven_segment_array.vhd}
+  {D:/Desktop/magistrale/1_anno/1 SEMESTRE/architettura/esercizi/ESERCIZI TESINA/Cronometro/Cronometro.srcs/sources_1/new/Datapath.vhd}
   {D:/Desktop/magistrale/1_anno/1 SEMESTRE/architettura/esercizi/ESERCIZI TESINA/Cronometro/Cronometro.srcs/sources_1/new/OrologioOnBoard.vhd}
 }
 OPTRACE "Adding files" END { }
@@ -113,6 +121,8 @@ read_xdc {{D:/Desktop/magistrale/1_anno/1 SEMESTRE/architettura/esercizi/ESERCIZ
 set_property used_in_implementation false [get_files {{D:/Desktop/magistrale/1_anno/1 SEMESTRE/architettura/esercizi/ESERCIZI TESINA/Cronometro/Cronometro.srcs/constrs_1/new/constraint.xdc}}]
 
 set_param ips.enableIPCacheLiteLoad 1
+
+read_checkpoint -auto_incremental -incremental {D:/Desktop/magistrale/1_anno/1 SEMESTRE/architettura/esercizi/ESERCIZI TESINA/Cronometro/Cronometro.srcs/utils_1/imports/synth_1/OrologioOnBoard.dcp}
 close [open __synthesis_is_running__ w]
 
 OPTRACE "synth_design" START { }

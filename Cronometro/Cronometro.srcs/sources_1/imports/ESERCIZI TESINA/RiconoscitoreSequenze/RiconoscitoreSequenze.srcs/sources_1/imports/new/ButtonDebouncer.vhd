@@ -34,7 +34,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 entity ButtonDebouncer is
 	generic (
 		CLK_period: integer := 20;
-		btn_noise_time: integer := 6500000
+		btn_noise_time: integer := 65000000 
 	);
 	Port (
   		CLK, RST, BTN: IN std_logic;

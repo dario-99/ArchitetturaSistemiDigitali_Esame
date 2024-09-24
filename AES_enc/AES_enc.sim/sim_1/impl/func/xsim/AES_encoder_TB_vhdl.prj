@@ -1,0 +1,23 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"AES_encoder_TB_func_impl.vhd" \
+"../../../../../AES_enc.srcs/sources_1/new/mux_2_1.vhd" \
+"../../../../../AES_enc.srcs/sources_1/new/reg.vhd" \
+"../../../../../AES_enc.srcs/sources_1/new/CounterModN.vhd" \
+"../../../../../AES_enc.srcs/sources_1/new/RoundConstLUT.vhd" \
+"../../../../../AES_enc.srcs/sources_1/new/sbox.vhd" \
+"../../../../../AES_enc.srcs/sources_1/new/KeyRoundScheduler.vhd" \
+"../../../../../AES_enc.srcs/sources_1/new/KeyRoundGenerator.vhd" \
+"../../../../../AES_enc.srcs/sources_1/new/KeyAdder.vhd" \
+"../../../../../AES_enc.srcs/sources_1/new/SostitutoreByte.vhd" \
+"../../../../../AES_enc.srcs/sources_1/new/rowShifter.vhd" \
+"../../../../../AES_enc.srcs/sources_1/new/GaloisFieldMultiplierBy2.vhd" \
+"../../../../../AES_enc.srcs/sources_1/new/ColumnMultiplier.vhd" \
+"../../../../../AES_enc.srcs/sources_1/new/ColumnMixer.vhd" \
+"../../../../../AES_enc.srcs/sources_1/new/DataPath.vhd" \
+"../../../../../AES_enc.srcs/sources_1/new/Controller.vhd" \
+"../../../../../AES_enc.srcs/sources_1/new/AES_encoder.vhd" \
+"../../../../../AES_enc.srcs/sim_1/new/AES_encoder_TB.vhd" \
+
+# Do not sort compile order
+nosort

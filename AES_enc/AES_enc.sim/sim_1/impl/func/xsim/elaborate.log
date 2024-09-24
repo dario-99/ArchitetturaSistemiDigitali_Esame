@@ -1,0 +1,35 @@
+Vivado Simulator v2023.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: D:/Programs/vivado/Vivado/2023.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot AES_encoder_TB_func_impl xil_defaultlib.AES_encoder_TB -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.math_real
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture behavioral of entity xil_defaultlib.mux_2_1 [mux_2_1_default]
+Compiling architecture behavioral of entity xil_defaultlib.reg [\reg(n=128)\]
+Compiling architecture behavioral of entity xil_defaultlib.Contatore [\Contatore(n=11)\]
+Compiling architecture behavioral of entity xil_defaultlib.RoundConstLUT [roundconstlut_default]
+Compiling architecture behavioral of entity xil_defaultlib.sbox [sbox_default]
+Compiling architecture behavioral of entity xil_defaultlib.KeyRoundScheduler [keyroundscheduler_default]
+Compiling architecture behavioral of entity xil_defaultlib.KeyRoundGenerator [keyroundgenerator_default]
+Compiling architecture behavioral of entity xil_defaultlib.KeyAdder [keyadder_default]
+Compiling architecture behavioral of entity xil_defaultlib.SostitutoreByte [sostitutorebyte_default]
+Compiling architecture behavioral of entity xil_defaultlib.rowShifter [rowshifter_default]
+Compiling architecture behavioral of entity xil_defaultlib.GaloisFieldMultiplierBy2 [galoisfieldmultiplierby2_default]
+Compiling architecture behavioral of entity xil_defaultlib.ColumnMultiplier [columnmultiplier_default]
+Compiling architecture behavioral of entity xil_defaultlib.ColumnMixer [columnmixer_default]
+Compiling architecture behavioral of entity xil_defaultlib.DataPath [datapath_default]
+Compiling architecture behavioral of entity xil_defaultlib.Controller [controller_default]
+Compiling architecture structural of entity xil_defaultlib.AES_encoder [aes_encoder_default]
+Compiling architecture behavioral of entity xil_defaultlib.aes_encoder_tb
+Built simulation snapshot AES_encoder_TB_func_impl

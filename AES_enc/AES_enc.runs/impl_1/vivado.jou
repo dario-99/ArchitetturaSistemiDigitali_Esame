@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Fri Sep 13 16:17:17 2024
+# Process ID: 39992
+# Current directory: D:/Desktop/magistrale/1_anno/1 SEMESTRE/architettura/esercizi/ESERCIZI TESINA/AES_enc/AES_enc.runs/impl_1
+# Command line: vivado.exe -log AES_encoderOnBoard.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source AES_encoderOnBoard.tcl -notrace
+# Log file: D:/Desktop/magistrale/1_anno/1 SEMESTRE/architettura/esercizi/ESERCIZI TESINA/AES_enc/AES_enc.runs/impl_1/AES_encoderOnBoard.vdi
+# Journal file: D:/Desktop/magistrale/1_anno/1 SEMESTRE/architettura/esercizi/ESERCIZI TESINA/AES_enc/AES_enc.runs/impl_1\vivado.jou
+# Running On: dario-pc, OS: Windows, CPU Frequency: 4200 MHz, CPU Physical cores: 12, Host memory: 16961 MB
+#-----------------------------------------------------------
+source AES_encoderOnBoard.tcl -notrace

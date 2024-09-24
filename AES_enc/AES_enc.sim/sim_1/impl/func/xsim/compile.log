@@ -1,0 +1,70 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Desktop/magistrale/1_anno/1 SEMESTRE/architettura/esercizi/ESERCIZI TESINA/AES_enc/AES_enc.sim/sim_1/impl/func/xsim/AES_encoder_TB_func_impl.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Contatore'
+INFO: [VRFC 10-3107] analyzing entity '\Contatore__parameterized0\'
+INFO: [VRFC 10-3107] analyzing entity 'Controller'
+INFO: [VRFC 10-3107] analyzing entity 'ROM'
+INFO: [VRFC 10-3107] analyzing entity 'reg'
+INFO: [VRFC 10-3107] analyzing entity 'reg_0'
+INFO: [VRFC 10-3107] analyzing entity 'sbox'
+INFO: [VRFC 10-3107] analyzing entity 'sbox_1'
+INFO: [VRFC 10-3107] analyzing entity 'sbox_10'
+INFO: [VRFC 10-3107] analyzing entity 'sbox_11'
+INFO: [VRFC 10-3107] analyzing entity 'sbox_12'
+INFO: [VRFC 10-3107] analyzing entity 'sbox_13'
+INFO: [VRFC 10-3107] analyzing entity 'sbox_14'
+INFO: [VRFC 10-3107] analyzing entity 'sbox_15'
+INFO: [VRFC 10-3107] analyzing entity 'sbox_2'
+INFO: [VRFC 10-3107] analyzing entity 'sbox_3'
+INFO: [VRFC 10-3107] analyzing entity 'sbox_4'
+INFO: [VRFC 10-3107] analyzing entity 'sbox_5'
+INFO: [VRFC 10-3107] analyzing entity 'sbox_6'
+INFO: [VRFC 10-3107] analyzing entity 'sbox_7'
+INFO: [VRFC 10-3107] analyzing entity 'sbox_8'
+INFO: [VRFC 10-3107] analyzing entity 'sbox_9'
+INFO: [VRFC 10-3107] analyzing entity 'KeyRoundGenerator'
+INFO: [VRFC 10-3107] analyzing entity 'SostitutoreByte'
+INFO: [VRFC 10-3107] analyzing entity 'DataPath'
+INFO: [VRFC 10-3107] analyzing entity 'AES_encoder'
+INFO: [VRFC 10-3107] analyzing entity 'AES_encoderOnBoard'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Desktop/magistrale/1_anno/1 SEMESTRE/architettura/esercizi/ESERCIZI TESINA/AES_enc/AES_enc.srcs/sources_1/new/mux_2_1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'mux_2_1'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Desktop/magistrale/1_anno/1 SEMESTRE/architettura/esercizi/ESERCIZI TESINA/AES_enc/AES_enc.srcs/sources_1/new/reg.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'reg'
+WARNING: [VRFC 10-3607] overwriting existing primary unit 'reg' [D:/Desktop/magistrale/1_anno/1 SEMESTRE/architettura/esercizi/ESERCIZI TESINA/AES_enc/AES_enc.srcs/sources_1/new/reg.vhd:10]
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Desktop/magistrale/1_anno/1 SEMESTRE/architettura/esercizi/ESERCIZI TESINA/AES_enc/AES_enc.srcs/sources_1/new/CounterModN.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Contatore'
+WARNING: [VRFC 10-3607] overwriting existing primary unit 'contatore' [D:/Desktop/magistrale/1_anno/1 SEMESTRE/architettura/esercizi/ESERCIZI TESINA/AES_enc/AES_enc.srcs/sources_1/new/CounterModN.vhd:13]
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Desktop/magistrale/1_anno/1 SEMESTRE/architettura/esercizi/ESERCIZI TESINA/AES_enc/AES_enc.srcs/sources_1/new/RoundConstLUT.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'RoundConstLUT'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Desktop/magistrale/1_anno/1 SEMESTRE/architettura/esercizi/ESERCIZI TESINA/AES_enc/AES_enc.srcs/sources_1/new/sbox.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'sbox'
+WARNING: [VRFC 10-3607] overwriting existing primary unit 'sbox' [D:/Desktop/magistrale/1_anno/1 SEMESTRE/architettura/esercizi/ESERCIZI TESINA/AES_enc/AES_enc.srcs/sources_1/new/sbox.vhd:10]
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Desktop/magistrale/1_anno/1 SEMESTRE/architettura/esercizi/ESERCIZI TESINA/AES_enc/AES_enc.srcs/sources_1/new/KeyRoundScheduler.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'KeyRoundScheduler'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Desktop/magistrale/1_anno/1 SEMESTRE/architettura/esercizi/ESERCIZI TESINA/AES_enc/AES_enc.srcs/sources_1/new/KeyRoundGenerator.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'KeyRoundGenerator'
+WARNING: [VRFC 10-3607] overwriting existing primary unit 'keyroundgenerator' [D:/Desktop/magistrale/1_anno/1 SEMESTRE/architettura/esercizi/ESERCIZI TESINA/AES_enc/AES_enc.srcs/sources_1/new/KeyRoundGenerator.vhd:10]
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Desktop/magistrale/1_anno/1 SEMESTRE/architettura/esercizi/ESERCIZI TESINA/AES_enc/AES_enc.srcs/sources_1/new/KeyAdder.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'KeyAdder'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Desktop/magistrale/1_anno/1 SEMESTRE/architettura/esercizi/ESERCIZI TESINA/AES_enc/AES_enc.srcs/sources_1/new/SostitutoreByte.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'SostitutoreByte'
+WARNING: [VRFC 10-3607] overwriting existing primary unit 'sostitutorebyte' [D:/Desktop/magistrale/1_anno/1 SEMESTRE/architettura/esercizi/ESERCIZI TESINA/AES_enc/AES_enc.srcs/sources_1/new/SostitutoreByte.vhd:10]
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Desktop/magistrale/1_anno/1 SEMESTRE/architettura/esercizi/ESERCIZI TESINA/AES_enc/AES_enc.srcs/sources_1/new/rowShifter.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'rowShifter'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Desktop/magistrale/1_anno/1 SEMESTRE/architettura/esercizi/ESERCIZI TESINA/AES_enc/AES_enc.srcs/sources_1/new/GaloisFieldMultiplierBy2.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'GaloisFieldMultiplierBy2'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Desktop/magistrale/1_anno/1 SEMESTRE/architettura/esercizi/ESERCIZI TESINA/AES_enc/AES_enc.srcs/sources_1/new/ColumnMultiplier.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'ColumnMultiplier'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Desktop/magistrale/1_anno/1 SEMESTRE/architettura/esercizi/ESERCIZI TESINA/AES_enc/AES_enc.srcs/sources_1/new/ColumnMixer.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'ColumnMixer'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Desktop/magistrale/1_anno/1 SEMESTRE/architettura/esercizi/ESERCIZI TESINA/AES_enc/AES_enc.srcs/sources_1/new/DataPath.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'DataPath'
+WARNING: [VRFC 10-3607] overwriting existing primary unit 'datapath' [D:/Desktop/magistrale/1_anno/1 SEMESTRE/architettura/esercizi/ESERCIZI TESINA/AES_enc/AES_enc.srcs/sources_1/new/DataPath.vhd:10]
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Desktop/magistrale/1_anno/1 SEMESTRE/architettura/esercizi/ESERCIZI TESINA/AES_enc/AES_enc.srcs/sources_1/new/Controller.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Controller'
+WARNING: [VRFC 10-3607] overwriting existing primary unit 'controller' [D:/Desktop/magistrale/1_anno/1 SEMESTRE/architettura/esercizi/ESERCIZI TESINA/AES_enc/AES_enc.srcs/sources_1/new/Controller.vhd:9]
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Desktop/magistrale/1_anno/1 SEMESTRE/architettura/esercizi/ESERCIZI TESINA/AES_enc/AES_enc.srcs/sources_1/new/AES_encoder.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'AES_encoder'
+WARNING: [VRFC 10-3607] overwriting existing primary unit 'aes_encoder' [D:/Desktop/magistrale/1_anno/1 SEMESTRE/architettura/esercizi/ESERCIZI TESINA/AES_enc/AES_enc.srcs/sources_1/new/AES_encoder.vhd:10]
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Desktop/magistrale/1_anno/1 SEMESTRE/architettura/esercizi/ESERCIZI TESINA/AES_enc/AES_enc.srcs/sim_1/new/AES_encoder_TB.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'AES_encoder_TB'

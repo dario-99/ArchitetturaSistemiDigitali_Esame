@@ -1,6 +1,6 @@
 -------------------------------------
 | Tool Version : Vivado v.2023.2
-| Date         : Wed Jul 17 15:29:38 2024
+| Date         : Wed Jul 31 17:56:01 2024
 | Host         : dario-pc
 | Design       : design_1
 | Device       : xc7a100t-csg324-1--

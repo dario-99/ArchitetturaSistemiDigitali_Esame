@@ -14,7 +14,9 @@ entity OrologioOnBoard is
 		CLK,RST: IN std_logic;
 		SET: IN std_logic;
 		SEL: IN std_logic_vector(0 to 2);	-- Segnale di selezione per il SET (0 => h, 1 => min, 2 => h
-		EN: IN std_logic;					-- Segnale di Enable
+		count: IN std_logic;				-- Segnale di Enable per il conteggio
+		save: IN std_logic;					-- Segnale per salvare l'intertempo
+		view: IN std_logic;					-- segnale per visualizzare gli intertempi salvati
 		parallel_in: IN std_logic_vector(5 downto 0);
 		
 		-- Uscite
@@ -24,29 +26,21 @@ entity OrologioOnBoard is
 end OrologioOnBoard;
 
 architecture Behavioral of OrologioOnBoard is
--- Reset 0 attivo
+---- Reset 0 attivo
 signal RST_n: std_logic;
 
--- Segnali di interconnessione
-
--- Segnali di uscita dei singoli contatori, codifica binaria
-signal sec_b, min_b: std_logic_vector(5 downto 0);
-signal h_b: std_logic_vector(4 downto 0);
-
--- Segnali encoded in decimale
-signal sec_d, min_d, h_d: std_logic_vector(7 downto 0);
-
--- Bottoni debounced
+---- Bottoni debounced
 signal SET_clrd: std_logic;
-signal SEL_clrd: std_logic_vector(0 to 2);
-signal EN_clrd: std_logic;
+signal count_clrd: std_logic;
+signal save_clrd: std_logic;
+signal view_clrd: std_logic;
+
+-- Segnali di interconnessione
+signal mem_read,mem_write, countr_save_incr, countr_read_incr: std_logic; 
+signal cronometro_en, mux_visore_sel, mux_addr_sel: std_logic;
 
 begin
-	RST_N <= not RST;
-	
-	-- metto in AND il segnale di SET_clrd con i segnali di selezione
-	SEL_clrd <= SEL when SET = '1' else
-				"000" when SET = '0';
+	RST_n <= not RST;
 	
 	-- Debouncers
 	set_debouncer: entity work.ButtonDebouncer port map(
@@ -55,42 +49,57 @@ begin
 		BTN => SET,
 		CLEARED_BTN => SET_clrd
 	);
-	en_debouncer: entity work.ButtonDebouncer port map(
+	count_debouncer: entity work.ButtonDebouncer port map(
 		CLK => CLK,
 		RST => RST_n,
-		BTN => EN,
-		CLEARED_BTN => EN_clrd
+		BTN => count,
+		CLEARED_BTN => count_clrd
 	);
-	
-	orologio: entity work.Orologio port map(
-		-- Ingressi
-		CLK => CLK, 
-		RST => RST_N,
-		EN => EN_clrd,
-		sel => SEL_clrd,
-		parallel => parallel_in,
-		-- Uscite
-		sec_out => sec_b,
-		min_out => min_b,
-		hour_out => h_b,
-		day_cnt => open		-- Tramite la parola chiave OPEN posso ignorare l'uscita
-	);
-	encoder_sec: entity work.DecimalEncoder generic map(N => 6) port map(x => sec_b, y => sec_d);
-	encoder_min: entity work.DecimalEncoder generic map(N => 6) port map(x => min_b, y => min_d);
-	encoder_h: entity work.DecimalEncoder generic map(N => 5) port map(x => h_b, y => h_d);
-	
-	display: entity work.seven_segment_array port map(
+	save_debouncer: entity work.ButtonDebouncer port map(
 		CLK => CLK,
-		RST => RST_N,
-		value(31 downto 24) => "00000000",
-		value(23 downto 16) => h_d,
-		value(15 downto 8) => min_d,
-		value(7 downto 0) => sec_d,
-		enable => "00111111",
-		dots => "00010100",
-		anodes => anodes_out,
-		cathodes => cathodes_out
+		RST => RST_n,
+		BTN => save,
+		CLEARED_BTN => save_clrd
 	);
+	view_debouncer: entity work.ButtonDebouncer port map(
+		CLK => CLK,
+		RST => RST_n,
+		BTN => view,
+		CLEARED_BTN => view_clrd
+	);
+	
+	datapath: entity work.Datapath port map(
+		CLK => CLK,
+		RST => RST_n,
+		SET => SET_clrd,
+		mem_read => mem_read,
+		mem_write => mem_write,
+		mem_read_countr_incr => countr_read_incr,
+		mem_write_countr_incr => countr_save_incr,
+		mux_visore_sel => mux_visore_sel,
+		mux_addr_sel => mux_addr_sel,
+		SEL => SEL,
+		EN => cronometro_en,
+		parallel_in => parallel_in,
+		cathodes_out => cathodes_out,
+		anodes_out => anodes_out
+	);
+	
+	cu: entity work.ControlUnit port map(
+		CLK => CLK,
+		RST => RST_n,
+		view => view_clrd,
+		count => count_clrd,
+		save => save_clrd,
+		mem_read => mem_read,
+		mem_write => mem_write,
+		countr_save_incr => countr_save_incr,
+		countr_read_incr => countr_read_incr,
+		cronometro_en => cronometro_en,
+		mux_visore_sel => mux_visore_sel,
+		mux_addr_sel => mux_addr_sel
+	);
+	
 
 end Behavioral;
 

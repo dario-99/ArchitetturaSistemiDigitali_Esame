@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1721222905">
+<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1722441285" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/OrologioOnBoard.dcp">
   <File Type="PA-TCL" Name="OrologioOnBoard.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="OrologioOnBoard_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="OrologioOnBoard_reports.tcl"/>
@@ -25,7 +25,27 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/new/DecimalEncoder.vhd">
+    <File Path="$PSRCDIR/sources_1/new/ControlUnit.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/counter_mod8.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../ROM_on_display/ROM_on_display.srcs/sources_1/new/counter_mod8.vhd"/>
+        <Attr Name="ImportTime" Val="1715951637"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Mux.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Memoria.vhd">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -37,18 +57,16 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/imports/new/clock_filter.vhd">
+    <File Path="$PSRCDIR/sources_1/new/DecimalEncoder.vhd">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../ROM_on_display/ROM_on_display.srcs/sources_1/new/clock_filter.vhd"/>
-        <Attr Name="ImportTime" Val="1715782177"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/imports/new/counter_mod8.vhd">
+    <File Path="$PSRCDIR/sources_1/imports/new/clock_filter.vhd">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../ROM_on_display/ROM_on_display.srcs/sources_1/new/counter_mod8.vhd"/>
-        <Attr Name="ImportTime" Val="1715951637"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../ROM_on_display/ROM_on_display.srcs/sources_1/new/clock_filter.vhd"/>
+        <Attr Name="ImportTime" Val="1715782177"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
@@ -73,6 +91,12 @@
       <FileInfo>
         <Attr Name="ImportPath" Val="$PPRDIR/../../ROM_on_display/ROM_on_display.srcs/sources_1/new/seven_segment_array.vhd"/>
         <Attr Name="ImportTime" Val="1721215061"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Datapath.vhd">
+      <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
@@ -103,6 +127,14 @@
   </FileSet>
   <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1" RelGenDir="$PGENDIR/utils_1">
     <Filter Type="Utils"/>
+    <File Path="$PSRCDIR/utils_1/imports/synth_1/OrologioOnBoard.dcp">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedInSteps" Val="synth_1"/>
+        <Attr Name="AutoDcp" Val="1"/>
+      </FileInfo>
+    </File>
     <Config>
       <Option Name="TopAutoSet" Val="TRUE"/>
     </Config>

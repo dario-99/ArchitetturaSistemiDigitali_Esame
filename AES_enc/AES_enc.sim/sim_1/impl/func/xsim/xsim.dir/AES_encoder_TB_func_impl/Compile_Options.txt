@@ -1,0 +1,1 @@
+--incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "secureip" --snapshot "AES_encoder_TB_func_impl" "xil_defaultlib.AES_encoder_TB" -log "elaborate.log" 

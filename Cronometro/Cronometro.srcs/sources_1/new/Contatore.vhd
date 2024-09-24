@@ -31,23 +31,21 @@ architecture Behavioral of Contatore is
 -- contatore
 signal cntr: std_logic_vector(integer(ceil(log2(real(N))))-1 downto 0) := (others => '0');
 begin
-	cnt_value <= cntr;
-	
+	cnt_value <= cntr;	
 	process(CLK, RST)
 	begin
 		if rising_edge(CLK) then
+			div_clk <= '0';
 			if RST = '1' then
-				div_clk <= '0';
 				cntr <= (others => '0');
 			elsif set = '1' then
 				cntr <= set_value;
 			elsif EN = '1' then
-				if conv_integer(cntr) >= N-1 then
+				if conv_integer(cntr) = N-1 then
 					cntr <= (others => '0');
 					div_clk <= '1';
 				else
 				 	cntr <= cntr + "1";
-					div_clk <= '0';
 				end if;
 			end if;
 		end if;

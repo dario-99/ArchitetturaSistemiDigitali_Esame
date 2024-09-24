@@ -1,0 +1,25 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Desktop/magistrale/1_anno/1 SEMESTRE/architettura/esercizi/ESERCIZI TESINA/Cronometro/Cronometro.sim/sim_1/synth/func/xsim/Cronometro_TB_func_synth.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'ButtonDebouncer'
+INFO: [VRFC 10-3107] analyzing entity 'ButtonDebouncer_0'
+INFO: [VRFC 10-3107] analyzing entity 'ButtonDebouncer_1'
+INFO: [VRFC 10-3107] analyzing entity 'ButtonDebouncer_2'
+INFO: [VRFC 10-3107] analyzing entity 'Contatore'
+INFO: [VRFC 10-3107] analyzing entity 'Contatore_4'
+INFO: [VRFC 10-3107] analyzing entity '\Contatore__parameterized0\'
+INFO: [VRFC 10-3107] analyzing entity 'ControlUnit'
+INFO: [VRFC 10-3107] analyzing entity 'Memoria'
+INFO: [VRFC 10-3107] analyzing entity 'clock_filter'
+INFO: [VRFC 10-3107] analyzing entity 'counter_mod8'
+INFO: [VRFC 10-3107] analyzing entity 'counter_mod8_3'
+INFO: [VRFC 10-3107] analyzing entity 'counter_mod8_5'
+INFO: [VRFC 10-3107] analyzing entity 'Orologio'
+INFO: [VRFC 10-3107] analyzing entity 'seven_segment_array'
+INFO: [VRFC 10-3107] analyzing entity 'Datapath'
+INFO: [VRFC 10-3107] analyzing entity 'OrologioOnBoard'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Desktop/magistrale/1_anno/1 SEMESTRE/architettura/esercizi/ESERCIZI TESINA/Cronometro/Cronometro.srcs/sim_1/new/Contatore_TB.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Contatore_TB'
+ERROR: [VRFC 10-719] formal port/generic <n> is not declared in <contatore> [D:/Desktop/magistrale/1_anno/1 SEMESTRE/architettura/esercizi/ESERCIZI TESINA/Cronometro/Cronometro.srcs/sim_1/new/Contatore_TB.vhd:18]
+ERROR: [VRFC 10-719] formal port/generic <clk> is not declared in <contatore> [D:/Desktop/magistrale/1_anno/1 SEMESTRE/architettura/esercizi/ESERCIZI TESINA/Cronometro/Cronometro.srcs/sim_1/new/Contatore_TB.vhd:19]
+ERROR: [VRFC 10-3353] formal port 'clk_ibuf_bufg' has no actual or default value [D:/Desktop/magistrale/1_anno/1 SEMESTRE/architettura/esercizi/ESERCIZI TESINA/Cronometro/Cronometro.srcs/sim_1/new/Contatore_TB.vhd:18]
+ERROR: [VRFC 10-9458] unit 'behavioral' is ignored due to previous errors [D:/Desktop/magistrale/1_anno/1 SEMESTRE/architettura/esercizi/ESERCIZI TESINA/Cronometro/Cronometro.srcs/sim_1/new/Contatore_TB.vhd:8]
+INFO: [VRFC 10-8704] VHDL file 'D:/Desktop/magistrale/1_anno/1 SEMESTRE/architettura/esercizi/ESERCIZI TESINA/Cronometro/Cronometro.srcs/sim_1/new/Contatore_TB.vhd' is ignored due to errors

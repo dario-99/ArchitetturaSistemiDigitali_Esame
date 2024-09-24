@@ -1,0 +1,1 @@
+--incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "secureip" --snapshot "Cronometro_TB_behav" "xil_defaultlib.Cronometro_TB" -log "elaborate.log" 

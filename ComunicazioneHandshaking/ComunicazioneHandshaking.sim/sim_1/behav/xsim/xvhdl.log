@@ -1,6 +1,8 @@
-INFO: [VRFC 10-163] Analyzing VHDL file "D:/Desktop/magistrale/1_anno/1 SEMESTRE/architettura/esercizi/ESERCIZI TESINA/ComunicazioneHandshaking/ComunicazioneHandshaking.srcs/sources_1/new/FA.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'FA'
-INFO: [VRFC 10-163] Analyzing VHDL file "D:/Desktop/magistrale/1_anno/1 SEMESTRE/architettura/esercizi/ESERCIZI TESINA/ComunicazioneHandshaking/ComunicazioneHandshaking.srcs/sources_1/new/RippleCarryAdder.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'RippleCarryAdder'
-INFO: [VRFC 10-163] Analyzing VHDL file "D:/Desktop/magistrale/1_anno/1 SEMESTRE/architettura/esercizi/ESERCIZI TESINA/ComunicazioneHandshaking/ComunicazioneHandshaking.srcs/sim_1/new/RippleCarryAdder_TB.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'RippleCarryAdder_TB'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Desktop/magistrale/1_anno/1 SEMESTRE/architettura/esercizi/ESERCIZI TESINA/ComunicazioneHandshaking/ComunicazioneHandshaking.srcs/sources_1/new/ControlUnitB.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'ControlUnitB'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Desktop/magistrale/1_anno/1 SEMESTRE/architettura/esercizi/ESERCIZI TESINA/ComunicazioneHandshaking/ComunicazioneHandshaking.srcs/sources_1/new/Receiver.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Receiver'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Desktop/magistrale/1_anno/1 SEMESTRE/architettura/esercizi/ESERCIZI TESINA/ComunicazioneHandshaking/ComunicazioneHandshaking.srcs/sources_1/new/SistemaComunicazione.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'SistemaComunicazione'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Desktop/magistrale/1_anno/1 SEMESTRE/architettura/esercizi/ESERCIZI TESINA/ComunicazioneHandshaking/ComunicazioneHandshaking.srcs/sim_1/new/SistemaComunicazione_TB.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'SistemaComunicazione_TB'

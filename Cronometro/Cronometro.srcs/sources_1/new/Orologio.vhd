@@ -27,12 +27,22 @@ architecture Behavioral of Orologio is
 -- Segnali di interconnessione
 signal sec2min: std_logic;
 signal min2h: std_logic;
+signal bdt2s: std_logic;
 begin
 
-	sec_cntr: entity work.Contatore generic map( N => 60 ) port map(
+	base_dei_tempi: entity work.Contatore generic map( N => 1 ) port map(
 		CLK => CLK,
 		RST => RST,
 		EN => EN,
+		SET => '0',
+		set_value => (others => '0'),
+		cnt_value => open,
+		div_clk => bdt2s
+	);
+	sec_cntr: entity work.Contatore generic map( N => 60 ) port map(
+		CLK => CLK,
+		RST => RST,
+		EN => bdt2s,
 		SET => sel(2),
 		set_value => parallel,
 		cnt_value => sec_out,
@@ -41,16 +51,16 @@ begin
 	min_cntr: entity work.Contatore generic map( N => 60 ) port map(
 		CLK => CLK,
 		RST => RST,
-		EN => EN,
+		EN => sec2min,
 		SET => sel(1),
 		set_value => parallel,
 		cnt_value => min_out,
-		div_clk => sec2min
+		div_clk => min2h
 	);
 	h_cntr: entity work.Contatore generic map( N => 24 ) port map(
 		CLK => CLK,
 		RST => RST,
-		EN => EN,
+		EN => min2h,
 		SET => sel(0),
 		set_value => parallel(4 downto 0),
 		cnt_value => hour_out,

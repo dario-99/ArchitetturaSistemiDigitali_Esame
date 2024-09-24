@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="AES_encoder_TB_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="AES_encoder_TB" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="99.919 ns"></ZoomStartTime>
+      <ZoomEndTime time="736.017 ns"></ZoomEndTime>
+      <Cursor1Time time="630.000 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="155"></NameColumnWidth>
+      <ValueColumnWidth column_width="250"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="24" />
+   <wave_markers>
+      <marker time="120000" label="" />
+   </wave_markers>
+   <wvobject fp_name="/AES_encoder_TB/CLK" type="logic">
+      <obj_property name="ElementShortName">CLK</obj_property>
+      <obj_property name="ObjectShortName">CLK</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AES_encoder_TB/RST" type="logic">
+      <obj_property name="ElementShortName">RST</obj_property>
+      <obj_property name="ObjectShortName">RST</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AES_encoder_TB/uut/msg" type="array">
+      <obj_property name="ElementShortName">msg[127:0]</obj_property>
+      <obj_property name="ObjectShortName">msg[127:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AES_encoder_TB/uut/key" type="array">
+      <obj_property name="ElementShortName">key[127:0]</obj_property>
+      <obj_property name="ObjectShortName">key[127:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AES_encoder_TB/encrypted_msg" type="array">
+      <obj_property name="ElementShortName">encrypted_msg[127:0]</obj_property>
+      <obj_property name="ObjectShortName">encrypted_msg[127:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AES_encoder_TB/uut/dp/counter/cnt_value" type="array">
+      <obj_property name="ElementShortName">cnt_value[3:0]</obj_property>
+      <obj_property name="ObjectShortName">cnt_value[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AES_encoder_TB/uut/dp/roundConstLut/round_const" type="array">
+      <obj_property name="ElementShortName">round_const[7:0]</obj_property>
+      <obj_property name="ObjectShortName">round_const[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AES_encoder_TB/uut/dp/keyGenerator/next_subkey" type="array">
+      <obj_property name="ElementShortName">next_subkey[127:0]</obj_property>
+      <obj_property name="ObjectShortName">next_subkey[127:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="group406" type="group">
+      <obj_property name="label">Mux</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject type="divider" fp_name="divider396">
+         <obj_property name="label">mux load</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+      </wvobject>
+      <wvobject fp_name="/AES_encoder_TB/uut/dp/mux_load_compute/a" type="array">
+         <obj_property name="ElementShortName">a[127:0]</obj_property>
+         <obj_property name="ObjectShortName">a[127:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/AES_encoder_TB/uut/dp/mux_load_compute/b" type="array">
+         <obj_property name="ElementShortName">b[127:0]</obj_property>
+         <obj_property name="ObjectShortName">b[127:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/AES_encoder_TB/uut/dp/mux_load_compute/s" type="logic">
+         <obj_property name="ElementShortName">s</obj_property>
+         <obj_property name="ObjectShortName">s</obj_property>
+      </wvobject>
+      <wvobject fp_name="/AES_encoder_TB/uut/dp/mux_load_compute/y" type="array">
+         <obj_property name="ElementShortName">y[127:0]</obj_property>
+         <obj_property name="ObjectShortName">y[127:0]</obj_property>
+      </wvobject>
+      <wvobject type="divider" fp_name="divider405">
+         <obj_property name="label">Mux col mix</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+      </wvobject>
+      <wvobject fp_name="/AES_encoder_TB/uut/dp/mux_skip_col_mix/a" type="array">
+         <obj_property name="ElementShortName">a[127:0]</obj_property>
+         <obj_property name="ObjectShortName">a[127:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/AES_encoder_TB/uut/dp/mux_skip_col_mix/b" type="array">
+         <obj_property name="ElementShortName">b[127:0]</obj_property>
+         <obj_property name="ObjectShortName">b[127:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/AES_encoder_TB/uut/dp/mux_skip_col_mix/s" type="logic">
+         <obj_property name="ElementShortName">s</obj_property>
+         <obj_property name="ObjectShortName">s</obj_property>
+      </wvobject>
+      <wvobject fp_name="/AES_encoder_TB/uut/dp/mux_skip_col_mix/y" type="array">
+         <obj_property name="ElementShortName">y[127:0]</obj_property>
+         <obj_property name="ObjectShortName">y[127:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group407" type="group">
+      <obj_property name="label">Reg</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/AES_encoder_TB/uut/dp/reg/CLK" type="logic">
+         <obj_property name="ElementShortName">CLK</obj_property>
+         <obj_property name="ObjectShortName">CLK</obj_property>
+      </wvobject>
+      <wvobject fp_name="/AES_encoder_TB/uut/dp/reg/RST" type="logic">
+         <obj_property name="ElementShortName">RST</obj_property>
+         <obj_property name="ObjectShortName">RST</obj_property>
+      </wvobject>
+      <wvobject fp_name="/AES_encoder_TB/uut/dp/reg/EN" type="logic">
+         <obj_property name="ElementShortName">EN</obj_property>
+         <obj_property name="ObjectShortName">EN</obj_property>
+      </wvobject>
+      <wvobject fp_name="/AES_encoder_TB/uut/dp/reg/d" type="array">
+         <obj_property name="ElementShortName">d[127:0]</obj_property>
+         <obj_property name="ObjectShortName">d[127:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/AES_encoder_TB/uut/dp/reg/q" type="array">
+         <obj_property name="ElementShortName">q[127:0]</obj_property>
+         <obj_property name="ObjectShortName">q[127:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/AES_encoder_TB/uut/dp/reg/temp_value" type="array">
+         <obj_property name="ElementShortName">temp_value[127:0]</obj_property>
+         <obj_property name="ObjectShortName">temp_value[127:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/AES_encoder_TB/uut/dp/reg/N" type="other">
+         <obj_property name="ElementShortName">N</obj_property>
+         <obj_property name="ObjectShortName">N</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group419" type="group">
+      <obj_property name="label">key_adder</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/AES_encoder_TB/uut/dp/keyAdder/x" type="array">
+         <obj_property name="ElementShortName">x[127:0]</obj_property>
+         <obj_property name="ObjectShortName">x[127:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/AES_encoder_TB/uut/dp/keyAdder/round_key" type="array">
+         <obj_property name="ElementShortName">round_key[127:0]</obj_property>
+         <obj_property name="ObjectShortName">round_key[127:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/AES_encoder_TB/uut/dp/keyAdder/y" type="array">
+         <obj_property name="ElementShortName">y[127:0]</obj_property>
+         <obj_property name="ObjectShortName">y[127:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group423" type="group">
+      <obj_property name="label">SubBox</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/AES_encoder_TB/uut/dp/SubBox/x" type="array">
+         <obj_property name="ElementShortName">x[127:0]</obj_property>
+         <obj_property name="ObjectShortName">x[127:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/AES_encoder_TB/uut/dp/SubBox/y" type="array">
+         <obj_property name="ElementShortName">y[127:0]</obj_property>
+         <obj_property name="ObjectShortName">y[127:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group429" type="group">
+      <obj_property name="label">rowShift</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/AES_encoder_TB/uut/dp/rowShifter/input" type="array">
+         <obj_property name="ElementShortName">input[127:0]</obj_property>
+         <obj_property name="ObjectShortName">input[127:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/AES_encoder_TB/uut/dp/rowShifter/output" type="array">
+         <obj_property name="ElementShortName">output[127:0]</obj_property>
+         <obj_property name="ObjectShortName">output[127:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group432" type="group">
+      <obj_property name="label">colMix</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/AES_encoder_TB/uut/dp/colMix/x" type="array">
+         <obj_property name="ElementShortName">x[127:0]</obj_property>
+         <obj_property name="ObjectShortName">x[127:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/AES_encoder_TB/uut/dp/colMix/y" type="array">
+         <obj_property name="ElementShortName">y[127:0]</obj_property>
+         <obj_property name="ObjectShortName">y[127:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider437">
+      <obj_property name="label">CU</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AES_encoder_TB/uut/cu/counter_value" type="array">
+      <obj_property name="ElementShortName">counter_value[3:0]</obj_property>
+      <obj_property name="ObjectShortName">counter_value[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AES_encoder_TB/uut/cu/start" type="logic">
+      <obj_property name="ElementShortName">start</obj_property>
+      <obj_property name="ObjectShortName">start</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AES_encoder_TB/uut/cu/inc_counter" type="logic">
+      <obj_property name="ElementShortName">inc_counter</obj_property>
+      <obj_property name="ObjectShortName">inc_counter</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AES_encoder_TB/uut/cu/update_reg" type="logic">
+      <obj_property name="ElementShortName">update_reg</obj_property>
+      <obj_property name="ObjectShortName">update_reg</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AES_encoder_TB/uut/cu/mux_sel" type="logic">
+      <obj_property name="ElementShortName">mux_sel</obj_property>
+      <obj_property name="ObjectShortName">mux_sel</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AES_encoder_TB/uut/cu/mux_round_key" type="logic">
+      <obj_property name="ElementShortName">mux_round_key</obj_property>
+      <obj_property name="ObjectShortName">mux_round_key</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AES_encoder_TB/uut/cu/last_round" type="logic">
+      <obj_property name="ElementShortName">last_round</obj_property>
+      <obj_property name="ObjectShortName">last_round</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AES_encoder_TB/uut/cu/done" type="logic">
+      <obj_property name="ElementShortName">done</obj_property>
+      <obj_property name="ObjectShortName">done</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AES_encoder_TB/uut/cu/stato" type="other">
+      <obj_property name="ElementShortName">stato</obj_property>
+      <obj_property name="ObjectShortName">stato</obj_property>
+   </wvobject>
+</wave_config>

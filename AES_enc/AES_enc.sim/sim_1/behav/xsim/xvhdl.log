@@ -1,0 +1,6 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Desktop/magistrale/1_anno/1 SEMESTRE/architettura/esercizi/ESERCIZI TESINA/AES_enc/AES_enc.srcs/sources_1/new/Controller.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Controller'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Desktop/magistrale/1_anno/1 SEMESTRE/architettura/esercizi/ESERCIZI TESINA/AES_enc/AES_enc.srcs/sources_1/new/AES_encoder.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'AES_encoder'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Desktop/magistrale/1_anno/1 SEMESTRE/architettura/esercizi/ESERCIZI TESINA/AES_enc/AES_enc.srcs/sim_1/new/AES_encoder_TB.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'AES_encoder_TB'

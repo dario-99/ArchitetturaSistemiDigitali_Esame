@@ -1,0 +1,338 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Fri Sep 13 16:09:18 2024
+# Process ID: 40164
+# Current directory: D:/Desktop/magistrale/1_anno/1 SEMESTRE/architettura/esercizi/ESERCIZI TESINA/AES_enc/AES_enc.runs/synth_1
+# Command line: vivado.exe -log AES_encoderOnBoard.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source AES_encoderOnBoard.tcl
+# Log file: D:/Desktop/magistrale/1_anno/1 SEMESTRE/architettura/esercizi/ESERCIZI TESINA/AES_enc/AES_enc.runs/synth_1/AES_encoderOnBoard.vds
+# Journal file: D:/Desktop/magistrale/1_anno/1 SEMESTRE/architettura/esercizi/ESERCIZI TESINA/AES_enc/AES_enc.runs/synth_1\vivado.jou
+# Running On: dario-pc, OS: Windows, CPU Frequency: 4200 MHz, CPU Physical cores: 12, Host memory: 16961 MB
+#-----------------------------------------------------------
+source AES_encoderOnBoard.tcl -notrace
+create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 473.562 ; gain = 179.188
+Command: read_checkpoint -auto_incremental -incremental {D:/Desktop/magistrale/1_anno/1 SEMESTRE/architettura/esercizi/ESERCIZI TESINA/AES_enc/AES_enc.srcs/utils_1/imports/synth_1/SostitutoreByte.dcp}
+INFO: [Vivado 12-5825] Read reference checkpoint from D:/Desktop/magistrale/1_anno/1 SEMESTRE/architettura/esercizi/ESERCIZI TESINA/AES_enc/AES_enc.srcs/utils_1/imports/synth_1/SostitutoreByte.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top AES_encoderOnBoard -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 40720
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 1329.617 ; gain = 439.883
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'AES_encoderOnBoard' [D:/Desktop/magistrale/1_anno/1 SEMESTRE/architettura/esercizi/ESERCIZI TESINA/AES_enc/AES_enc.srcs/sources_1/new/AES_encoderOnBoard.vhd:16]
+INFO: [Synth 8-638] synthesizing module 'Contatore' [D:/Desktop/magistrale/1_anno/1 SEMESTRE/architettura/esercizi/ESERCIZI TESINA/AES_enc/AES_enc.srcs/sources_1/new/CounterModN.vhd:27]
+	Parameter N bound to: 4 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Contatore' (0#1) [D:/Desktop/magistrale/1_anno/1 SEMESTRE/architettura/esercizi/ESERCIZI TESINA/AES_enc/AES_enc.srcs/sources_1/new/CounterModN.vhd:27]
+INFO: [Synth 8-638] synthesizing module 'ROM' [D:/Desktop/magistrale/1_anno/1 SEMESTRE/architettura/esercizi/ESERCIZI TESINA/AES_enc/AES_enc.srcs/sources_1/new/ROM.vhd:21]
+INFO: [Synth 8-256] done synthesizing module 'ROM' (0#1) [D:/Desktop/magistrale/1_anno/1 SEMESTRE/architettura/esercizi/ESERCIZI TESINA/AES_enc/AES_enc.srcs/sources_1/new/ROM.vhd:21]
+INFO: [Synth 8-638] synthesizing module 'AES_encoder' [D:/Desktop/magistrale/1_anno/1 SEMESTRE/architettura/esercizi/ESERCIZI TESINA/AES_enc/AES_enc.srcs/sources_1/new/AES_encoder.vhd:23]
+INFO: [Synth 8-638] synthesizing module 'DataPath' [D:/Desktop/magistrale/1_anno/1 SEMESTRE/architettura/esercizi/ESERCIZI TESINA/AES_enc/AES_enc.srcs/sources_1/new/DataPath.vhd:28]
+INFO: [Synth 8-638] synthesizing module 'mux_2_1' [D:/Desktop/magistrale/1_anno/1 SEMESTRE/architettura/esercizi/ESERCIZI TESINA/AES_enc/AES_enc.srcs/sources_1/new/mux_2_1.vhd:24]
+INFO: [Synth 8-226] default block is never used [D:/Desktop/magistrale/1_anno/1 SEMESTRE/architettura/esercizi/ESERCIZI TESINA/AES_enc/AES_enc.srcs/sources_1/new/mux_2_1.vhd:27]
+INFO: [Synth 8-256] done synthesizing module 'mux_2_1' (0#1) [D:/Desktop/magistrale/1_anno/1 SEMESTRE/architettura/esercizi/ESERCIZI TESINA/AES_enc/AES_enc.srcs/sources_1/new/mux_2_1.vhd:24]
+INFO: [Synth 8-638] synthesizing module '\reg ' [D:/Desktop/magistrale/1_anno/1 SEMESTRE/architettura/esercizi/ESERCIZI TESINA/AES_enc/AES_enc.srcs/sources_1/new/reg.vhd:24]
+	Parameter N bound to: 128 - type: integer 
+INFO: [Synth 8-256] done synthesizing module '\reg ' (0#1) [D:/Desktop/magistrale/1_anno/1 SEMESTRE/architettura/esercizi/ESERCIZI TESINA/AES_enc/AES_enc.srcs/sources_1/new/reg.vhd:24]
+INFO: [Synth 8-638] synthesizing module 'Contatore__parameterized0' [D:/Desktop/magistrale/1_anno/1 SEMESTRE/architettura/esercizi/ESERCIZI TESINA/AES_enc/AES_enc.srcs/sources_1/new/CounterModN.vhd:27]
+	Parameter N bound to: 11 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Contatore__parameterized0' (0#1) [D:/Desktop/magistrale/1_anno/1 SEMESTRE/architettura/esercizi/ESERCIZI TESINA/AES_enc/AES_enc.srcs/sources_1/new/CounterModN.vhd:27]
+INFO: [Synth 8-638] synthesizing module 'RoundConstLUT' [D:/Desktop/magistrale/1_anno/1 SEMESTRE/architettura/esercizi/ESERCIZI TESINA/AES_enc/AES_enc.srcs/sources_1/new/RoundConstLUT.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'RoundConstLUT' (0#1) [D:/Desktop/magistrale/1_anno/1 SEMESTRE/architettura/esercizi/ESERCIZI TESINA/AES_enc/AES_enc.srcs/sources_1/new/RoundConstLUT.vhd:18]
+INFO: [Synth 8-638] synthesizing module 'KeyRoundGenerator' [D:/Desktop/magistrale/1_anno/1 SEMESTRE/architettura/esercizi/ESERCIZI TESINA/AES_enc/AES_enc.srcs/sources_1/new/KeyRoundGenerator.vhd:23]
+INFO: [Synth 8-638] synthesizing module 'KeyRoundScheduler' [D:/Desktop/magistrale/1_anno/1 SEMESTRE/architettura/esercizi/ESERCIZI TESINA/AES_enc/AES_enc.srcs/sources_1/new/KeyRoundScheduler.vhd:19]
+INFO: [Synth 8-638] synthesizing module 'sbox' [D:/Desktop/magistrale/1_anno/1 SEMESTRE/architettura/esercizi/ESERCIZI TESINA/AES_enc/AES_enc.srcs/sources_1/new/sbox.vhd:19]
+INFO: [Synth 8-226] default block is never used [D:/Desktop/magistrale/1_anno/1 SEMESTRE/architettura/esercizi/ESERCIZI TESINA/AES_enc/AES_enc.srcs/sources_1/new/sbox.vhd:22]
+INFO: [Synth 8-256] done synthesizing module 'sbox' (0#1) [D:/Desktop/magistrale/1_anno/1 SEMESTRE/architettura/esercizi/ESERCIZI TESINA/AES_enc/AES_enc.srcs/sources_1/new/sbox.vhd:19]
+INFO: [Synth 8-256] done synthesizing module 'KeyRoundScheduler' (0#1) [D:/Desktop/magistrale/1_anno/1 SEMESTRE/architettura/esercizi/ESERCIZI TESINA/AES_enc/AES_enc.srcs/sources_1/new/KeyRoundScheduler.vhd:19]
+INFO: [Synth 8-256] done synthesizing module 'KeyRoundGenerator' (0#1) [D:/Desktop/magistrale/1_anno/1 SEMESTRE/architettura/esercizi/ESERCIZI TESINA/AES_enc/AES_enc.srcs/sources_1/new/KeyRoundGenerator.vhd:23]
+INFO: [Synth 8-638] synthesizing module 'KeyAdder' [D:/Desktop/magistrale/1_anno/1 SEMESTRE/architettura/esercizi/ESERCIZI TESINA/AES_enc/AES_enc.srcs/sources_1/new/KeyAdder.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'KeyAdder' (0#1) [D:/Desktop/magistrale/1_anno/1 SEMESTRE/architettura/esercizi/ESERCIZI TESINA/AES_enc/AES_enc.srcs/sources_1/new/KeyAdder.vhd:20]
+INFO: [Synth 8-638] synthesizing module 'SostitutoreByte' [D:/Desktop/magistrale/1_anno/1 SEMESTRE/architettura/esercizi/ESERCIZI TESINA/AES_enc/AES_enc.srcs/sources_1/new/SostitutoreByte.vhd:19]
+INFO: [Synth 8-256] done synthesizing module 'SostitutoreByte' (0#1) [D:/Desktop/magistrale/1_anno/1 SEMESTRE/architettura/esercizi/ESERCIZI TESINA/AES_enc/AES_enc.srcs/sources_1/new/SostitutoreByte.vhd:19]
+INFO: [Synth 8-638] synthesizing module 'rowShifter' [D:/Desktop/magistrale/1_anno/1 SEMESTRE/architettura/esercizi/ESERCIZI TESINA/AES_enc/AES_enc.srcs/sources_1/new/rowShifter.vhd:17]
+INFO: [Synth 8-256] done synthesizing module 'rowShifter' (0#1) [D:/Desktop/magistrale/1_anno/1 SEMESTRE/architettura/esercizi/ESERCIZI TESINA/AES_enc/AES_enc.srcs/sources_1/new/rowShifter.vhd:17]
+INFO: [Synth 8-638] synthesizing module 'ColumnMixer' [D:/Desktop/magistrale/1_anno/1 SEMESTRE/architettura/esercizi/ESERCIZI TESINA/AES_enc/AES_enc.srcs/sources_1/new/ColumnMixer.vhd:19]
+INFO: [Synth 8-638] synthesizing module 'ColumnMultiplier' [D:/Desktop/magistrale/1_anno/1 SEMESTRE/architettura/esercizi/ESERCIZI TESINA/AES_enc/AES_enc.srcs/sources_1/new/ColumnMultiplier.vhd:20]
+INFO: [Synth 8-638] synthesizing module 'GaloisFieldMultiplierBy2' [D:/Desktop/magistrale/1_anno/1 SEMESTRE/architettura/esercizi/ESERCIZI TESINA/AES_enc/AES_enc.srcs/sources_1/new/GaloisFieldMultiplierBy2.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'GaloisFieldMultiplierBy2' (0#1) [D:/Desktop/magistrale/1_anno/1 SEMESTRE/architettura/esercizi/ESERCIZI TESINA/AES_enc/AES_enc.srcs/sources_1/new/GaloisFieldMultiplierBy2.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'ColumnMultiplier' (0#1) [D:/Desktop/magistrale/1_anno/1 SEMESTRE/architettura/esercizi/ESERCIZI TESINA/AES_enc/AES_enc.srcs/sources_1/new/ColumnMultiplier.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'ColumnMixer' (0#1) [D:/Desktop/magistrale/1_anno/1 SEMESTRE/architettura/esercizi/ESERCIZI TESINA/AES_enc/AES_enc.srcs/sources_1/new/ColumnMixer.vhd:19]
+INFO: [Synth 8-256] done synthesizing module 'DataPath' (0#1) [D:/Desktop/magistrale/1_anno/1 SEMESTRE/architettura/esercizi/ESERCIZI TESINA/AES_enc/AES_enc.srcs/sources_1/new/DataPath.vhd:28]
+INFO: [Synth 8-638] synthesizing module 'Controller' [D:/Desktop/magistrale/1_anno/1 SEMESTRE/architettura/esercizi/ESERCIZI TESINA/AES_enc/AES_enc.srcs/sources_1/new/Controller.vhd:25]
+INFO: [Synth 8-256] done synthesizing module 'Controller' (0#1) [D:/Desktop/magistrale/1_anno/1 SEMESTRE/architettura/esercizi/ESERCIZI TESINA/AES_enc/AES_enc.srcs/sources_1/new/Controller.vhd:25]
+INFO: [Synth 8-256] done synthesizing module 'AES_encoder' (0#1) [D:/Desktop/magistrale/1_anno/1 SEMESTRE/architettura/esercizi/ESERCIZI TESINA/AES_enc/AES_enc.srcs/sources_1/new/AES_encoder.vhd:23]
+INFO: [Synth 8-256] done synthesizing module 'AES_encoderOnBoard' (0#1) [D:/Desktop/magistrale/1_anno/1 SEMESTRE/architettura/esercizi/ESERCIZI TESINA/AES_enc/AES_enc.srcs/sources_1/new/AES_encoderOnBoard.vhd:16]
+WARNING: [Synth 8-6014] Unused sequential element mux_sel_reg was removed.  [D:/Desktop/magistrale/1_anno/1 SEMESTRE/architettura/esercizi/ESERCIZI TESINA/AES_enc/AES_enc.srcs/sources_1/new/Controller.vhd:37]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1440.453 ; gain = 550.719
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1440.453 ; gain = 550.719
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1440.453 ; gain = 550.719
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.034 . Memory (MB): peak = 1440.453 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/Desktop/magistrale/1_anno/1 SEMESTRE/architettura/esercizi/ESERCIZI TESINA/AES_enc/AES_enc.srcs/constrs_1/new/constraint.xdc]
+Finished Parsing XDC File [D:/Desktop/magistrale/1_anno/1 SEMESTRE/architettura/esercizi/ESERCIZI TESINA/AES_enc/AES_enc.srcs/constrs_1/new/constraint.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/Desktop/magistrale/1_anno/1 SEMESTRE/architettura/esercizi/ESERCIZI TESINA/AES_enc/AES_enc.srcs/constrs_1/new/constraint.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/AES_encoderOnBoard_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/AES_encoderOnBoard_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1532.863 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1532.863 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1532.863 ; gain = 643.129
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1532.863 ; gain = 643.129
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1532.863 ; gain = 643.129
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'stato_reg' in module 'Controller'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  s_idle |                           000001 |                              000
+              s_load_msg |                           000010 |                              001
+               s_compute |                           000100 |                              010
+          s_incr_counter |                           001000 |                              011
+             s_last_step |                           010000 |                              100
+                  s_done |                           100000 |                              101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'stato_reg' using encoding 'one-hot' in module 'Controller'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1532.863 ; gain = 643.129
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input    4 Bit       Adders := 1     
+	   2 Input    2 Bit       Adders := 1     
++---XORs : 
+	   2 Input    128 Bit         XORs := 1     
+	   2 Input     32 Bit         XORs := 4     
+	   2 Input      8 Bit         XORs := 17    
+	   3 Input      8 Bit         XORs := 12    
+	   5 Input      8 Bit         XORs := 8     
++---Registers : 
+	              128 Bit    Registers := 3     
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   4 Input  128 Bit        Muxes := 1     
+	   2 Input  128 Bit        Muxes := 3     
+	   6 Input    6 Bit        Muxes := 1     
+	   2 Input    6 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 1     
+	   6 Input    1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:24 . Memory (MB): peak = 1532.863 ; gain = 643.129
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+ROM: Preliminary Mapping Report
++-------------------+---------------------------------------------------------------------------+---------------+----------------+
+|Module Name        | RTL Object                                                                | Depth x Width | Implemented As | 
++-------------------+---------------------------------------------------------------------------+---------------+----------------+
+|sbox               | output_byte                                                               | 256x8         | LUT            | 
+|AES_encoderOnBoard | aes_enc/dp/SubBox/substituter[0].sbox/output_byte                         | 256x8         | LUT            | 
+|AES_encoderOnBoard | aes_enc/dp/SubBox/substituter[1].sbox/output_byte                         | 256x8         | LUT            | 
+|AES_encoderOnBoard | aes_enc/dp/SubBox/substituter[3].sbox/output_byte                         | 256x8         | LUT            | 
+|AES_encoderOnBoard | aes_enc/dp/SubBox/substituter[4].sbox/output_byte                         | 256x8         | LUT            | 
+|AES_encoderOnBoard | aes_enc/dp/SubBox/substituter[5].sbox/output_byte                         | 256x8         | LUT            | 
+|AES_encoderOnBoard | aes_enc/dp/SubBox/substituter[6].sbox/output_byte                         | 256x8         | LUT            | 
+|AES_encoderOnBoard | aes_enc/dp/SubBox/substituter[7].sbox/output_byte                         | 256x8         | LUT            | 
+|AES_encoderOnBoard | aes_enc/dp/SubBox/substituter[8].sbox/output_byte                         | 256x8         | LUT            | 
+|AES_encoderOnBoard | aes_enc/dp/SubBox/substituter[9].sbox/output_byte                         | 256x8         | LUT            | 
+|AES_encoderOnBoard | aes_enc/dp/SubBox/substituter[10].sbox/output_byte                        | 256x8         | LUT            | 
+|AES_encoderOnBoard | aes_enc/dp/SubBox/substituter[11].sbox/output_byte                        | 256x8         | LUT            | 
+|AES_encoderOnBoard | aes_enc/dp/SubBox/substituter[12].sbox/output_byte                        | 256x8         | LUT            | 
+|AES_encoderOnBoard | aes_enc/dp/SubBox/substituter[13].sbox/output_byte                        | 256x8         | LUT            | 
+|AES_encoderOnBoard | aes_enc/dp/SubBox/substituter[14].sbox/output_byte                        | 256x8         | LUT            | 
+|AES_encoderOnBoard | aes_enc/dp/SubBox/substituter[15].sbox/output_byte                        | 256x8         | LUT            | 
+|AES_encoderOnBoard | aes_enc/dp/keyGenerator/key_scheduler/gen_sboxes[0].sbox_inst/output_byte | 256x8         | Block RAM      | 
+|AES_encoderOnBoard | aes_enc/dp/keyGenerator/round_key_reg/temp_value_reg_rep                  | 256x8         | Block RAM      | 
+|AES_encoderOnBoard | aes_enc/dp/keyGenerator/key_scheduler/gen_sboxes[2].sbox_inst/output_byte | 256x8         | Block RAM      | 
+|AES_encoderOnBoard | aes_enc/dp/keyGenerator/key_scheduler/gen_sboxes[3].sbox_inst/output_byte | 256x8         | Block RAM      | 
++-------------------+---------------------------------------------------------------------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:29 ; elapsed = 00:00:28 . Memory (MB): peak = 1532.863 ; gain = 643.129
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:30 ; elapsed = 00:00:29 . Memory (MB): peak = 1532.863 ; gain = 643.129
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance i_693 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance aes_enc/dp/keyGenerator/round_key_reg/temp_value_reg_rep (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_694 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_694 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:30 ; elapsed = 00:00:30 . Memory (MB): peak = 1532.863 ; gain = 643.129
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:34 ; elapsed = 00:00:34 . Memory (MB): peak = 1532.863 ; gain = 643.129
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:34 ; elapsed = 00:00:34 . Memory (MB): peak = 1532.863 ; gain = 643.129
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:34 ; elapsed = 00:00:34 . Memory (MB): peak = 1532.863 ; gain = 643.129
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:34 ; elapsed = 00:00:34 . Memory (MB): peak = 1532.863 ; gain = 643.129
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:34 ; elapsed = 00:00:34 . Memory (MB): peak = 1532.863 ; gain = 643.129
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:34 ; elapsed = 00:00:34 . Memory (MB): peak = 1532.863 ; gain = 643.129
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |BUFG     |     1|
+|2     |LUT1     |     3|
+|3     |LUT2     |   186|
+|4     |LUT3     |    80|
+|5     |LUT4     |    89|
+|6     |LUT5     |   174|
+|7     |LUT6     |   612|
+|8     |MUXF7    |   256|
+|9     |MUXF8    |   128|
+|10    |RAMB18E1 |     3|
+|12    |FDRE     |   281|
+|13    |FDSE     |     8|
+|14    |IBUF     |     4|
+|15    |OBUF     |     9|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:34 ; elapsed = 00:00:34 . Memory (MB): peak = 1532.863 ; gain = 643.129
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:26 ; elapsed = 00:00:32 . Memory (MB): peak = 1532.863 ; gain = 550.719
+Synthesis Optimization Complete : Time (s): cpu = 00:00:34 ; elapsed = 00:00:34 . Memory (MB): peak = 1532.863 ; gain = 643.129
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.028 . Memory (MB): peak = 1532.863 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 387 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1532.863 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 341e20b1
+INFO: [Common 17-83] Releasing license: Synthesis
+67 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:37 ; elapsed = 00:00:38 . Memory (MB): peak = 1532.863 ; gain = 1050.641
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1532.863 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/Desktop/magistrale/1_anno/1 SEMESTRE/architettura/esercizi/ESERCIZI TESINA/AES_enc/AES_enc.runs/synth_1/AES_encoderOnBoard.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file AES_encoderOnBoard_utilization_synth.rpt -pb AES_encoderOnBoard_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Sep 13 16:10:04 2024...

@@ -1,0 +1,19 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../ComunicazioneHandshaking.srcs/sources_1/new/ControlUnitA.vhd" \
+"../../../../ComunicazioneHandshaking.srcs/sources_1/new/ControlUnitB.vhd" \
+"../../../../ComunicazioneHandshaking.srcs/sources_1/new/Counter.vhd" \
+"../../../../ComunicazioneHandshaking.srcs/sources_1/new/ROM.vhd" \
+"../../../../ComunicazioneHandshaking.srcs/sources_1/new/DataPathA.vhd" \
+"../../../../ComunicazioneHandshaking.srcs/sources_1/new/RX_Register.vhd" \
+"../../../../ComunicazioneHandshaking.srcs/sources_1/imports/new/Memoria.vhd" \
+"../../../../ComunicazioneHandshaking.srcs/sources_1/new/FA.vhd" \
+"../../../../ComunicazioneHandshaking.srcs/sources_1/new/RippleCarryAdder.vhd" \
+"../../../../ComunicazioneHandshaking.srcs/sources_1/new/DataPathB.vhd" \
+"../../../../ComunicazioneHandshaking.srcs/sources_1/new/Receiver.vhd" \
+"../../../../ComunicazioneHandshaking.srcs/sources_1/new/Transmitter.vhd" \
+"../../../../ComunicazioneHandshaking.srcs/sources_1/new/SistemaComunicazione.vhd" \
+"../../../../ComunicazioneHandshaking.srcs/sim_1/new/SistemaComunicazione_TB.vhd" \
+
+# Do not sort compile order
+nosort

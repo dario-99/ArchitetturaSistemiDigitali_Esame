@@ -1,4 +1,8 @@
-INFO: [VRFC 10-163] Analyzing VHDL file "D:/Desktop/magistrale/1_anno/1 SEMESTRE/architettura/esercizi/ESERCIZI TESINA/Cronometro/Cronometro.srcs/sources_1/new/Contatore.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'Contatore'
-INFO: [VRFC 10-163] Analyzing VHDL file "D:/Desktop/magistrale/1_anno/1 SEMESTRE/architettura/esercizi/ESERCIZI TESINA/Cronometro/Cronometro.srcs/sim_1/new/Contatore_TB.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'Contatore_TB'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Desktop/magistrale/1_anno/1 SEMESTRE/architettura/esercizi/ESERCIZI TESINA/Cronometro/Cronometro.srcs/sources_1/new/Orologio.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Orologio'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Desktop/magistrale/1_anno/1 SEMESTRE/architettura/esercizi/ESERCIZI TESINA/Cronometro/Cronometro.srcs/sources_1/new/Datapath.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Datapath'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Desktop/magistrale/1_anno/1 SEMESTRE/architettura/esercizi/ESERCIZI TESINA/Cronometro/Cronometro.srcs/sources_1/new/OrologioOnBoard.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'OrologioOnBoard'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Desktop/magistrale/1_anno/1 SEMESTRE/architettura/esercizi/ESERCIZI TESINA/Cronometro/Cronometro.srcs/sim_1/new/Cronometro_TB.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Cronometro_TB'
