@@ -1,0 +1,291 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Sat Jun 15 11:21:31 2024
+# Process ID: 16968
+# Current directory: D:/Desktop/magistrale/1_anno/1 SEMESTRE/architettura/esercizi/2_UART/2_UART.runs/synth_1
+# Command line: vivado.exe -log comunicazione_2_uart.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source comunicazione_2_uart.tcl
+# Log file: D:/Desktop/magistrale/1_anno/1 SEMESTRE/architettura/esercizi/2_UART/2_UART.runs/synth_1/comunicazione_2_uart.vds
+# Journal file: D:/Desktop/magistrale/1_anno/1 SEMESTRE/architettura/esercizi/2_UART/2_UART.runs/synth_1\vivado.jou
+# Running On: dario-pc, OS: Windows, CPU Frequency: 3893 MHz, CPU Physical cores: 12, Host memory: 16424 MB
+#-----------------------------------------------------------
+source comunicazione_2_uart.tcl -notrace
+Command: synth_design -top comunicazione_2_uart -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 1036
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 1325.930 ; gain = 439.410
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'comunicazione_2_uart' [D:/Desktop/magistrale/1_anno/1 SEMESTRE/architettura/esercizi/2_UART/2_UART.srcs/sources_1/new/comunicazione_2_uart.vhd:54]
+INFO: [Synth 8-638] synthesizing module 'Rs232RefComp' [D:/Desktop/magistrale/1_anno/1 SEMESTRE/architettura/esercizi/2_UART/2_UART.srcs/sources_1/imports/7-Interfaccia seriale/RS232RefComp.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'Rs232RefComp' (0#1) [D:/Desktop/magistrale/1_anno/1 SEMESTRE/architettura/esercizi/2_UART/2_UART.srcs/sources_1/imports/7-Interfaccia seriale/RS232RefComp.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'comunicazione_2_uart' (0#1) [D:/Desktop/magistrale/1_anno/1 SEMESTRE/architettura/esercizi/2_UART/2_UART.srcs/sources_1/new/comunicazione_2_uart.vhd:54]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1434.551 ; gain = 548.031
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1434.551 ; gain = 548.031
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1434.551 ; gain = 548.031
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1434.551 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/Desktop/magistrale/1_anno/1 SEMESTRE/architettura/esercizi/2_UART/2_UART.srcs/constrs_1/new/constraint.xdc]
+Finished Parsing XDC File [D:/Desktop/magistrale/1_anno/1 SEMESTRE/architettura/esercizi/2_UART/2_UART.srcs/constrs_1/new/constraint.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/Desktop/magistrale/1_anno/1 SEMESTRE/architettura/esercizi/2_UART/2_UART.srcs/constrs_1/new/constraint.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/comunicazione_2_uart_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/comunicazione_2_uart_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1541.566 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.022 . Memory (MB): peak = 1541.566 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 1541.566 ; gain = 655.047
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 1541.566 ; gain = 655.047
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 1541.566 ; gain = 655.047
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'strCur_reg' in module 'Rs232RefComp'
+INFO: [Synth 8-802] inferred FSM for state register 'stbeCur_reg' in module 'Rs232RefComp'
+INFO: [Synth 8-802] inferred FSM for state register 'sttCur_reg' in module 'Rs232RefComp'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 sttidle |                              001 |                               00
+             stttransfer |                              010 |                               01
+                sttshift |                              100 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'sttCur_reg' using encoding 'one-hot' in module 'Rs232RefComp'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 stridle |                               00 |                               00
+           streightdelay |                               01 |                               01
+              strgetdata |                               10 |                               10
+            strcheckstop |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'strCur_reg' using encoding 'sequential' in module 'Rs232RefComp'
+WARNING: [Synth 8-327] inferring latch for variable 'TBE_reg' [D:/Desktop/magistrale/1_anno/1 SEMESTRE/architettura/esercizi/2_UART/2_UART.srcs/sources_1/imports/7-Interfaccia seriale/RS232RefComp.vhd:313]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                stbeidle |                               00 |                               00
+              stbesettbe |                               01 |                               01
+            stbewaitload |                               10 |                               10
+           stbewaitwrite |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'stbeCur_reg' using encoding 'sequential' in module 'Rs232RefComp'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 1541.566 ; gain = 655.047
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input    9 Bit       Adders := 2     
+	   2 Input    4 Bit       Adders := 8     
++---XORs : 
+	   8 Input      1 Bit         XORs := 2     
+	   9 Input      1 Bit         XORs := 2     
++---Registers : 
+	               11 Bit    Registers := 2     
+	               10 Bit    Registers := 2     
+	                9 Bit    Registers := 2     
+	                8 Bit    Registers := 2     
+	                4 Bit    Registers := 8     
+	                1 Bit    Registers := 10    
++---Muxes : 
+	   2 Input   11 Bit        Muxes := 2     
+	   3 Input    3 Bit        Muxes := 2     
+	   2 Input    3 Bit        Muxes := 4     
+	   4 Input    2 Bit        Muxes := 4     
+	   2 Input    2 Bit        Muxes := 14    
+	   2 Input    1 Bit        Muxes := 2     
+	   4 Input    1 Bit        Muxes := 12    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-3332] Sequential element (trasmettitore/FSM_sequential_strCur_reg[1]) is unused and will be removed from module comunicazione_2_uart.
+WARNING: [Synth 8-3332] Sequential element (trasmettitore/FSM_sequential_strCur_reg[0]) is unused and will be removed from module comunicazione_2_uart.
+WARNING: [Synth 8-3332] Sequential element (ricevitore/FSM_onehot_sttCur_reg[2]) is unused and will be removed from module comunicazione_2_uart.
+WARNING: [Synth 8-3332] Sequential element (ricevitore/FSM_onehot_sttCur_reg[1]) is unused and will be removed from module comunicazione_2_uart.
+WARNING: [Synth 8-3332] Sequential element (ricevitore/FSM_onehot_sttCur_reg[0]) is unused and will be removed from module comunicazione_2_uart.
+WARNING: [Synth 8-3332] Sequential element (ricevitore/TBE_reg) is unused and will be removed from module comunicazione_2_uart.
+WARNING: [Synth 8-3332] Sequential element (ricevitore/FSM_sequential_stbeCur_reg[1]) is unused and will be removed from module comunicazione_2_uart.
+WARNING: [Synth 8-3332] Sequential element (ricevitore/FSM_sequential_stbeCur_reg[0]) is unused and will be removed from module comunicazione_2_uart.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:16 . Memory (MB): peak = 1541.566 ; gain = 655.047
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:20 . Memory (MB): peak = 1541.566 ; gain = 655.047
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:20 . Memory (MB): peak = 1541.566 ; gain = 655.047
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:15 ; elapsed = 00:00:20 . Memory (MB): peak = 1541.566 ; gain = 655.047
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:18 ; elapsed = 00:00:24 . Memory (MB): peak = 1541.566 ; gain = 655.047
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:18 ; elapsed = 00:00:24 . Memory (MB): peak = 1541.566 ; gain = 655.047
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:18 ; elapsed = 00:00:24 . Memory (MB): peak = 1541.566 ; gain = 655.047
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:18 ; elapsed = 00:00:24 . Memory (MB): peak = 1541.566 ; gain = 655.047
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:18 ; elapsed = 00:00:24 . Memory (MB): peak = 1541.566 ; gain = 655.047
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:18 ; elapsed = 00:00:24 . Memory (MB): peak = 1541.566 ; gain = 655.047
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++---------------------+--------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name          | RTL Name                 | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++---------------------+--------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|comunicazione_2_uart | ricevitore/rdSReg_reg[7] | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
++---------------------+--------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |LUT1   |     8|
+|3     |LUT2   |    10|
+|4     |LUT3   |    18|
+|5     |LUT4   |    14|
+|6     |LUT5   |    13|
+|7     |LUT6   |    11|
+|8     |SRL16E |     1|
+|9     |FDRE   |    69|
+|10    |LD     |     1|
+|11    |IBUF   |    12|
+|12    |OBUF   |     8|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:18 ; elapsed = 00:00:24 . Memory (MB): peak = 1541.566 ; gain = 655.047
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 10 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:12 ; elapsed = 00:00:21 . Memory (MB): peak = 1541.566 ; gain = 548.031
+Synthesis Optimization Complete : Time (s): cpu = 00:00:18 ; elapsed = 00:00:24 . Memory (MB): peak = 1541.566 ; gain = 655.047
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1541.566 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 1 inverter(s) to 1 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1541.566 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  LD => LDCE (inverted pins: G): 1 instance 
+
+Synth Design complete | Checksum: 84d7c6ec
+INFO: [Common 17-83] Releasing license: Synthesis
+25 Infos, 10 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:21 ; elapsed = 00:00:34 . Memory (MB): peak = 1541.566 ; gain = 1068.219
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1541.566 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/Desktop/magistrale/1_anno/1 SEMESTRE/architettura/esercizi/2_UART/2_UART.runs/synth_1/comunicazione_2_uart.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file comunicazione_2_uart_utilization_synth.rpt -pb comunicazione_2_uart_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sat Jun 15 11:22:12 2024...

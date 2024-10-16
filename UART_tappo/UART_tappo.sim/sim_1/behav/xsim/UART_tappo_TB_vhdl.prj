@@ -1,0 +1,9 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../UART_tappo.srcs/sources_1/imports/new/ButtonDebouncer.vhd" \
+"../../../../UART_tappo.srcs/sources_1/imports/7-Interfaccia seriale/RS232RefComp.vhd" \
+"../../../../UART_tappo.srcs/sources_1/new/UART_tappo.vhd" \
+"../../../../UART_tappo.srcs/sim_1/new/UART_tappo_TB.vhd" \
+
+# Do not sort compile order
+nosort

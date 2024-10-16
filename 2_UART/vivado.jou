@@ -1,0 +1,18 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Sat Oct 12 18:50:24 2024
+# Process ID: 15112
+# Current directory: D:/Desktop/magistrale/1_anno/1_SEMESTRE/architettura/esercizi/2_UART
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent19372 D:\Desktop\magistrale\1_anno\1_SEMESTRE\architettura\esercizi\2_UART\2_UART.xpr
+# Log file: D:/Desktop/magistrale/1_anno/1_SEMESTRE/architettura/esercizi/2_UART/vivado.log
+# Journal file: D:/Desktop/magistrale/1_anno/1_SEMESTRE/architettura/esercizi/2_UART\vivado.jou
+# Running On: dario-pc, OS: Windows, CPU Frequency: 4200 MHz, CPU Physical cores: 12, Host memory: 16961 MB
+#-----------------------------------------------------------
+start_gui
+open_project D:/Desktop/magistrale/1_anno/1_SEMESTRE/architettura/esercizi/2_UART/2_UART.xpr
+update_compile_order -fileset sources_1
+open_project D:/Desktop/magistrale/1_anno/1_SEMESTRE/architettura/esercizi/UART_tappo/UART_tappo.xpr
+update_compile_order -fileset sources_1
